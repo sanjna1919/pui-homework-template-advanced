@@ -1,0 +1,87 @@
+.navbar ul{
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  list-style-type: none;
+  text-transform: uppercase;
+
+}
+
+.line{
+  background-color: black;
+  height: 2px;
+  width: 500px;
+}
+
+/* larger grid to center the entire box on the page */
+.main-container{
+  display: grid;
+  place-items: center;
+}
+
+/* grid with items, shows gaps and  */
+.grid-container{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 250px);
+}
+
+/* Product container*/
+.box{
+   /* margin: 30px; */
+  background-color: antiquewhite;
+  padding: 20px;
+  width: 210px;
+}
+
+
+/* All items inside product container */
+.title{
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Roll image styling */
+.roll{
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
+/* body font */
+.body{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+}
+
+/* Styling CTA button */
+.cta{
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border-style: solid black;
+  border-radius: 0;
+  padding: 4px 12px;
+  background-color: white;
+}
+
+.button{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-style: solid black;
+  border-radius: 0;
+  background-color: white;
+  padding: 4px 8px;
+}
+
+.dropdown{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
