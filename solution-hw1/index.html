@@ -1,197 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <head>
+<head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
-    <title>Bun Bun Bake Shop</title>
-  </head>
+     <!-- navbar and header section -->
+    <div class="navbar-box">
+        <!-- left side of navbar with logo -->
+        <div class="nav-left">
+            <img src="../assets/logo/logo-01.svg" class="logo">
+        </div>
 
-    <!-- <h1>I am the solution to HW1!</h1>
+        <!-- right side with two parts, top and bottom -->
+        <div class="nav-right">
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p> -->
+            <!-- contains nav links -->
+            <div class="nav-right-top">
+                <div class="navlinks">
+                    <span class="link">
+                        <a href="" >Products</a>
+                    </span>
+                    <span class="link">
+                        <a href="" >Cart</a>
+                    </span>
+                    
+                </div>
+            </div>
 
+            <div class="nav-right-bottom">
+                <div class="main-title">Our hand-made cinnamon rolls</div>
+            </div>
 
+        </div>
 
-  <body>
-    <!-- navbar and header section -->
-    <nav class="navbar">
-        <!-- logo first -->
-         <ul>
-            <li>Products</li>
-            <li>Cart</li>
-         </ul>
-         <!-- message -->
-          <div class="line"></div>
-    </nav>
+    </div>
+    
     
     <div class="main-container">
-
     <div class="grid-container">
+
         <!-- Product 1 -->
         <div class="box">
             <div class="product">
-                <img class="roll" src="assets/products/original-cinnamon-roll.jpg" width="200px">
-                <p class="title">Name of product</p>
-
-                <div class="details">
-                    <!-- grid for inner things? -->
-                </div>
-
-
-                <label for="glazing" class="body">Glazing:</label>
-                <select id="glazing" name="glazing" class="body" class="dropdown">
-                    <option value="keepog">Keep Original</option>
-                    <option value="sugar">Sugar milk</option>
-                    <option value="vanilla">Vanilla milk</option>
-                    <option value="choc">Double chocolate</option>
-                </select>
-    
+                <!-- image -->
+                <img class="roll" src="../assets/products/original-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Original Cinnamon Roll</p>
                 
-                <span class="body">
-                    <span>Pack</span>
-                    <button class="button">1</button>
-                    <button class="button">2</button>
-                    <button class="button">3</button>
-                    <button class="button">4</button>
-                </span>
-                <br>
-    
-                <span>
-                    <span class="title">$2.49</span>
-                    <button class="cta">Add to Cart</button>
-                </span>
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing" name="glazing" class="body dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack:</span>
+                        <span class="pack-button">
+                            <button class="button">1</button>
+                            <button class="button">2</button>
+                            <button class="button">3</button>
+                            <button class="button">4</button>
+                        </span>
+                        <span class="title">$2.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
             </div>
         </div>
 
         <!-- Product 2 -->
         <div class="box">
             <div class="product">
-                <img class="roll" src="assets/products/apple-cinnamon-roll.jpg" width="200px">
-                <p class="title">Name of product</p>
-    
-                <label for="glazing" class="body">Glazing:</label>
-                <select id="glazing" name="glazing" class="body">
-                    <option value="keepog">Keep Original</option>
-                    <option value="sugar">Sugar milk</option>
-                    <option value="vanilla">Vanilla milk</option>
-                    <option value="choc">Double chocolate</option>
-                </select>
-    
+                <!-- image -->
+                <img class="roll" src="../assets/products/apple-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Apple Cinnamon Roll</p>
                 
-                <span>
-                    <span class="body">Pack</span>
-                    <button class="button">1</button>
-                    <button class="button">2</button>
-                    <button class="button">3</button>
-                    <button class="body">4</button>
-                </span>
-                <br>
-    
-                <span>
-                    <span class="title">$2.49</span>
-                    <button class="cta">Add to Cart</button>
-                </span>
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing" name="glazing" class="body dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack:</span>
+                        <span class="pack-button">
+                            <button class="button">1</button>
+                            <button class="button">2</button>
+                            <button class="button">3</button>
+                            <button class="button">4</button>
+                        </span>
+                        <span class="title">$2.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
             </div>
         </div>
-
 
         <!-- Product 3 -->
         <div class="box">
             <div class="product">
-                <img class="roll" src="assets/products/raisin-cinnamon-roll.jpg" width="200px">
-                <p class="title">Name of product</p>
-    
-                <label for="glazing" class="body">Glazing:</label>
-                <select id="glazing" name="glazing" class="body">
-                    <option value="keepog">Keep Original</option>
-                    <option value="sugar">Sugar milk</option>
-                    <option value="vanilla">Vanilla milk</option>
-                    <option value="choc">Double chocolate</option>
-                </select>
-    
+                <!-- image -->
+                <img class="roll" src="../assets/products/raisin-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Raisin Cinnamon Roll</p>
                 
-                <span>
-                    <span class="body">Pack</span>
-                    <button class="body">1</button>
-                    <button class="body">2</button>
-                    <button class="body">3</button>
-                    <button class="body">4</button>
-                </span>
-                <br>
-    
-                <span>
-                    <span class="title">$2.49</span>
-                    <button class="cta">Add to Cart</button>
-                </span>
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing" name="glazing" class="body dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack:</span>
+                        <span class="pack-button">
+                            <button class="button">1</button>
+                            <button class="button">2</button>
+                            <button class="button">3</button>
+                            <button class="button">4</button>
+                        </span>
+                        <span class="title">$2.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
             </div>
         </div>
 
         <!-- Product 4 -->
         <div class="box">
             <div class="product">
-                <img class="roll" src="assets/products/walnut-cinnamon-roll.jpg" width="200px">
-                <p class="title">Name of product</p>
-    
-                <label for="glazing" class="body">Glazing:</label>
-                <select id="glazing" name="glazing" class="body">
-                    <option value="keepog">Keep Original</option>
-                    <option value="sugar">Sugar milk</option>
-                    <option value="vanilla">Vanilla milk</option>
-                    <option value="choc">Double chocolate</option>
-                </select>
-    
+                <!-- image -->
+                <img class="roll" src="../assets/products/walnut-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Walnut Cinnamon Roll</p>
                 
-                <span>
-                    <span class="body">Pack</span>
-                    <button class="body">1</button>
-                    <button class="body">2</button>
-                    <button class="body">3</button>
-                    <button class="body">4</button>
-                </span>
-                <br>
-    
-                <span>
-                    <span class="title">$2.49</span>
-                    <button class="cta">Add to Cart</button>
-                </span>
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing" name="glazing" class="body dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack:</span>
+                        <span class="pack-button">
+                            <button class="button">1</button>
+                            <button class="button">2</button>
+                            <button class="button">3</button>
+                            <button class="button">4</button>
+                        </span>
+                        <span class="title">$2.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
             </div>
         </div>
+        
+
+
 
         <!-- Product 5 -->
         <div class="box">
             <div class="product">
-                <img class="roll" src="assets/products/double-chocolate-cinnamon-roll.jpg" width="200px">
-                <p class="title">Name of product</p>
-    
-                <label for="glazing" class="body">Glazing:</label>
-                <select id="glazing" name="glazing" class="body">
-                    <option value="keepog">Keep Original</option>
-                    <option value="sugar">Sugar milk</option>
-                    <option value="vanilla">Vanilla milk</option>
-                    <option value="choc">Double chocolate</option>
-                </select>
-    
+                <!-- image -->
+                <img class="roll" src="../assets/products/double-chocolate-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Double Chocolate Cinnamon Roll</p>
                 
-                <span>
-                    <span class="body">Pack</span>
-                    <button class="body">1</button>
-                    <button class="body">2</button>
-                    <button class="body">3</button>
-                    <button class="body">4</button>
-                </span>
-                <br>
-    
-                <span>
-                    <span class="title">$2.49</span>
-                    <button class="cta">Add to Cart</button>
-                </span>
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing" name="glazing" class="body dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack:</span>
+                        <span class="pack-button">
+                            <button class="button">1</button>
+                            <button class="button">2</button>
+                            <button class="button">3</button>
+                            <button class="button">4</button>
+                        </span>
+                        <span class="title">$2.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
             </div>
         </div>
 
@@ -199,37 +208,37 @@
         <!-- Product 6 -->
         <div class="box">
             <div class="product">
-                <img class="roll" src="assets/products/strawberry-cinnamon-roll.jpg" width="200px">
-                <p class="title">Name of product</p>
-    
-                <label for="glazing" class="body">Glazing:</label>
-                <select id="glazing" name="glazing" class="body">
-                    <option value="keepog">Keep Original</option>
-                    <option value="sugar">Sugar milk</option>
-                    <option value="vanilla">Vanilla milk</option>
-                    <option value="choc">Double chocolate</option>
-                </select>
-    
+                <!-- image -->
+                <img class="roll" src="../assets/products/strawberry-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Strawberry Cinnamon Roll</p>
                 
-                <span>
-                    <span class="body">Pack</span>
-                    <button class="body">1</button>
-                    <button class="body">2</button>
-                    <button class="body">3</button>
-                    <button class="body">4</button>
-                </span>
-                <br>
-    
-                <span>
-                    <span class="title">$2.49</span>
-                    <button class="cta">Add to Cart</button>
-                </span>
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing" name="glazing" class="body dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack:</span>
+                        <span class="pack-button">
+                            <button class="button">1</button>
+                            <button class="button">2</button>
+                            <button class="button">3</button>
+                            <button class="button">4</button>
+                        </span>
+                        <span class="title">$2.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
             </div>
         </div>
-
 
     </div>
     </div>
     
 </body>
 </html>
+
