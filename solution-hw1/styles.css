@@ -134,12 +134,61 @@
   justify-content: space-between;
 }
 
+/* THIS */
 .pack-button{
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   width: 145px;
   justify-content: space-between;
+}
+
+/* container holding all pack selection buttons */
+.pack-buttons{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 145px;
+  justify-content: space-between;
+}
+
+/* each pack select button */
+.pack-box{
+  cursor: pointer;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 2px solid black;
+  border-radius: 0px;
+  background-color: white;
+  text-align: center;
+  font-size: small;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* hover state */
+.pack-box:hover{
+  cursor: pointer;
+}
+
+/* removing radio button appearance */
+.pack-box input[type = "radio"]{
+  display: none;
+}
+
+/* when checked bg turns grey */
+.pack-box input:checked label{
+  background-color: grey;
+  border-color: black;
+}
+
+/* when unchecked bg is white */
+.pack-box input:not(:checked) label{
+  background-color: white;
+  color: #000;
+  border-color: black;
 }
 
 /* Styling CTA button */
