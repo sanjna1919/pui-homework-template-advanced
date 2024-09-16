@@ -4,9 +4,10 @@
 //if it were inside class then each time we make an object, we will keep creating a new array
 const cartItems = [];
 
-//initialise value of items in cart
+//initialise value of items in cart to display
 let total = 0;
-let items = cartItems.length;
+//initialise number of items in cart to display
+let items = 0;
 
 //generic Roll class that stores its type, price, glazing and pack size options
 class Roll{
@@ -36,6 +37,8 @@ class Roll{
         this.elementID = elementID;
 
         //creating strings for glazing name
+        //using this mapping to display the right string when item is added to cart
+        //keeping mapping separate from functions to avoid clutter
         if (this.selectedGlazing === "keepog"){
             this.glazingText = "Keep Original";
         }
@@ -52,21 +55,21 @@ class Roll{
         //finding all html references
         this.priceValue = document.getElementById(elementID).querySelector('.price-value');
         this.glazingDropdown = document.getElementById(elementID).querySelector('.dropdown');
-        //array of all the radio buttons 
+        //make array of all the radio buttons 
         this.packSizeBtn = document.getElementById(elementID).querySelectorAll('input');
         this.cartBtn = document.getElementById(elementID).querySelector('.cta');
         
-        //set event listener and update price to initialise
+        //call the set event listener and update price functions to initialise
         this.setEventListeners();
         this.updatePrice();
     }
     
-
+    //to compute total price of a roll
     computePrice(){
         return (this.basePrice + this.glazingPrice[this.selectedGlazing]) * this.packSizePrice[this.selectedPackSize]; 
     }
     
-    //this event sets up all event listeners for a roll object
+    //setting all necessary event listeners
     setEventListeners(){
         //for dropdown
         this.glazingDropdown.addEventListener('change', (e) => 
@@ -94,7 +97,8 @@ class Roll{
         })
     }
 
-    //this method updates price either when pack buttons are clicked or if dropdown option is changed
+
+    //this method updates price and is called either when pack buttons are clicked or if dropdown option is changed
     updatePrice(){
         this.priceValue.textContent = `$ ${this.computePrice().toFixed(2)}`;
     }
@@ -105,10 +109,12 @@ class Roll{
         this.itemText = document.getElementById(this.elementID).querySelector('.title').innerHTML;
         this.currentItem = [this.itemText, this.glazingText, this.selectedPackSize, this.priceValue.innerHTML];
         cartItems.push(this.currentItem);
+
+        //call this function to show all displays
         this.addToCartDisplay();
     }
 
-
+    //deals with all displays when an item is added to cart
     addToCartDisplay(){
         //show the new html box element
         document.getElementById('cart-status').style.display = 'block';
@@ -126,19 +132,20 @@ class Roll{
 
         // console.log(parseFloat(this.priceValue.innerHTML));
         //update total variable with price of item added
-        total += parseFloat(this.priceValue.innerHTML);
+        total += parseFloat(this.priceValue.innerHTML.replace("$", ""));
+        items += 1;
 
         //modifying innertext of box elements to show item values
         console.log(document.getElementById('cart-name').innerHTML);
 
         //modify the text under cart nav link 
         document.getElementById('items-in-cart').innerHTML = items + ' Items';
-        document.getElementById('cart-total').innerHTML = 'Total: ' + this.priceValue.innerHTML;
+        document.getElementById('cart-total').innerHTML = 'Total: ' + total;
     }
 }
 
 
-//initialise 6 roll objects
+//initialise 6 roll objects with the given base price and ID
 new Roll(2.49, "product1");
 new Roll(3.49, "product2");
 new Roll(2.99, "product3");
