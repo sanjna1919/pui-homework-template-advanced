@@ -140,7 +140,7 @@ class Roll{
 
         //modify the text under cart nav link 
         document.getElementById('items-in-cart').innerHTML = items + ' Items';
-        document.getElementById('cart-total').innerHTML = 'Total: ' + total;
+        document.getElementById('cart-total').innerHTML = 'Total: ' + total.toFixed(2);
     }
 }
 
