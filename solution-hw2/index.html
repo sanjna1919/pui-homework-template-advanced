@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="interaction.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <!-- navbar and header section -->
+    <div class="navbar-box">
+        <!-- left side of navbar with logo -->
+        <div class="nav-left">
+            <img src="../assets/logo/logo-01.svg" class="logo">
+        </div>
+
+        <!-- right side with two parts, top and bottom -->
+        <div class="nav-right">
+
+            <!-- contains nav links -->
+            <div class="nav-right-top">
+                <div class="navlinks">
+                    <span class="link">
+                        <a href="" >Products</a>
+                    </span>
+                    <span class="link">
+                        <a href="" >Cart</a>
+                    </span>
+                    <div class="cart-description">
+                        <p class="bodysmall" id="items-in-cart">0 Items</p>
+                        <p class="bodysmall" id="cart-total">Total: $0</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="nav-right-bottom">
+
+                
+
+
+                <div class="main-title">Our hand-made cinnamon rolls</div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    
+    
+    <div class="main-container">
+    <div class="grid-container">
+
+        <!-- Product 1 -->
+        <div class="box">
+            <div class="product" id="product1">
+                <!-- image -->
+                <img class="roll" src="../assets/products/original-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Original Cinnamon Roll</p>
+                
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing1" name="glazing" class="dropdown" >
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack size:</span>
+                        <span class="pack-buttons">
+                            <input type="radio" id="pack1" name="radio1" value="1" checked>
+                            <label for="pack1">1</label>
+                            
+                            <input type="radio" id="pack2" name="radio1" value="3">
+                            <label for="pack2">3</label>
+                            
+                            <input type="radio" id="pack3" name="radio1" value="6">
+                            <label for="pack3">6</label>
+                            
+                            <input type="radio" id="pack4" name="radio1" value="12">
+                            <label for="pack4">12</label> 
+                        </span>
+                        <span class="price-value">$2.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="box">
+            <div class="product" id="product2">
+                <!-- image -->
+                <img class="roll" src="../assets/products/apple-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Apple Cinnamon Roll</p>
+                
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing2" name="glazing" class="dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack size:</span>
+                        <span class="pack-buttons">
+                            <input type="radio" id="pack5" name="radio2" value="1"checked="true">
+                            <label for="pack5">1</label>
+                            
+                            <input type="radio" id="pack6" name="radio2" value="3">
+                            <label for="pack6">3</label>
+                             
+                            <input type="radio" id="pack7" name="radio2" value="6">
+                            <label for="pack7">6</label>
+                            
+                            <input type="radio" id="pack8" name="radio2" value="12">
+                            <label for="pack8">12</label> 
+                        </span>
+                        <span class="price-value">$3.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="box">
+            <div class="product" id="product3">
+                <!-- image -->
+                <img class="roll" src="../assets/products/raisin-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Raisin Cinnamon Roll</p>
+                
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing3" name="glazing" class="dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack size:</span>
+                        <span class="pack-buttons">
+                            <input type="radio" id="pack9" name="radio3" value="1" checked="true">
+                            <label for="pack9">1</label>
+                            
+                            <input type="radio" id="pack10" name="radio3" value="3">
+                            <label for="pack10">3</label>
+                            
+                            <input type="radio" id="pack11" name="radio3" value="6">
+                            <label for="pack11">6</label>
+                            
+                            <input type="radio" id="pack12" name="radio3" value="12">
+                            <label for="pack12">12</label> 
+                        </span>
+                        <span class="price-value">$2.99</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="box">
+            <div class="product" id="product4">
+                <!-- image -->
+                <img class="roll" src="../assets/products/walnut-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Walnut Cinnamon Roll</p>
+                
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing4" name="glazing" class="dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack size:</span>
+                        <span class="pack-buttons">
+                            <input type="radio" id="pack13" name="radio4" value="1" checked="true">
+                            <label for="pack13">1</label>
+                            
+                            <input type="radio" id="pack14" name="radio4" value="3">
+                            <label for="pack14">3</label>
+                            
+                            <input type="radio" id="pack15" name="radio4" value="6">
+                            <label for="pack15">6</label>
+                            
+                            <input type="radio" id="pack16" name="radio4" value="12">
+                            <label for="pack16">12</label> 
+                        </span>
+                        <span class="price-value">$3.49</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <!-- Product 5 -->
+        <div class="box">
+            <div class="product" id="product5">
+                <!-- image -->
+                <img class="roll" src="../assets/products/double-chocolate-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Double Chocolate Cinnamon Roll</p>
+                
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing5" name="glazing" class="dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack size:</span>
+                        <span class="pack-buttons">
+                            <input type="radio" id="pack17" name="radio5" value="1" checked="true">
+                            <label for="pack17">1</label>
+                            
+                            <input type="radio" id="pack18" value="3" name="radio5">
+                            <label for="pack18">3</label>
+                            
+                            <input type="radio" id="pack19" name="radio5" value="6">
+                            <label for="pack19">6</label>
+                            
+                            <input type="radio" id="pack20" name="radio5" value="12">
+                            <label for="pack20">12</label> 
+                        </span>
+                        <span class="price-value">$3.99</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Product 6 -->
+        <div class="box">
+            <div class="product" id="product6">
+                <!-- image -->
+                <img class="roll" src="../assets/products/strawberry-cinnamon-roll.jpg">
+                <!-- title -->
+                <p class="title">Strawberry Cinnamon Roll</p>
+                
+                <!-- flexbox for all details -->
+                <div class="details-container">
+                    
+                    <span class="body">Glazing:</span>
+                    <select id="glazing6" name="glazing" class="dropdown">
+                        <option value="keepog">Keep Original</option>
+                        <option value="sugar">Sugar milk</option>
+                        <option value="vanilla">Vanilla milk</option>
+                        <option value="choc">Double chocolate</option>
+                    </select>
+                        <span class="body1">Pack size:</span>
+                        <span class="pack-buttons">
+                            <input type="radio" id="pack21" name="radio6" value="1" checked="true">
+                            <label for="pack21">1</label>
+                            
+                            <input type="radio" id="pack22" name="radio6" value="3">
+                            <label for="pack22">3</label>
+                            
+                            <input type="radio" id="pack23" name="radio6" value="6">
+                            <label for="pack23">6</label>
+                            
+                            <input type="radio" id="pack24" name="radio6" value="12">
+                            <label for="pack24">12</label> 
+                        </span>
+                        <span class="price-value">$3.99</span>
+                        <button class="cta">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- card that appears near cart when item is added -->
+    <div class="cart-status" id="cart-status">
+        <p class="bodysmall">Added to cart</p>
+        <p></p>
+        <p id="cart-name" class="bodysmall-bold"></p>
+        <p id="cart-glaze" class="bodysmall"></p>
+        <p id="cart-pack" class="bodysmall">Pack of </p>
+        <p id="cart-price" class="bodysmall">Price:  </p>
+    </div>
+    
+
+</body>
+</html>
+

@@ -1,0 +1,268 @@
+.navbar-box{
+    margin: auto;
+    display: flex;
+    width: 870px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .nav-right{
+    width: 300px;
+  }
+  
+  .nav-right{
+    display: flex;
+    width: calc(100% - 300px);
+    flex-direction: column;
+  }
+  
+  .nav-right-top{
+    margin-right: 20px;
+    margin-left: auto;
+  }
+  
+  .nav-right-top a{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .nav-right-bottom{
+    padding-top: 50px;
+    padding-left: 20px;
+    border-top: 2px solid black;
+  }
+  
+  .navlinks a{
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size: large; 
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  
+  /* hover state for navigation links */
+  .navlinks a:hover{
+    background-color: yellow;
+  }
+  
+  .cart-description{
+    margin-left: 160px;
+  }
+
+  .logo{
+    width: 300px;
+  }
+  
+  /* horizontal line under navbar */
+  .line{
+    background-color: black;
+    height: 2px;
+    width: 500px;
+  }
+  
+  /* larger grid to center the entire box on the page */
+  /* have used grid here just to centre all content on the page */
+  .main-container{
+    display: grid;
+    place-items: center;
+  }
+  
+  /* grid with items, shows gaps and  */
+  .grid-container{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 250px);
+  }
+  
+  /* Product container*/
+  .box{
+     /* margin: 30px; */
+    background-color: white;
+    padding: 10px;
+    width: 240px;
+  }
+  
+  .product{
+    /* margin: 30px; */
+   background-color: white;
+   width: 240px;
+  }
+  
+  /* All items inside product container */
+  .title, .price-value{
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+    margin-top: 10px;
+  }
+  
+  .main-title{
+    font-family: "Roboto", sans-serif;
+    font-size: x-large;
+    
+  }
+  
+  /* Roll IMAGE styling */
+  .roll{
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 0px;
+    width: 240px;
+  }
+  
+  /* body font */
+  .body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+
+  .bodysmall{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: small;
+    line-height: 30%;
+  }
+
+  .bodysmall-bold{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: small;
+    line-height: 30%;
+    font-weight: 800;
+  }
+
+  .body1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-top: 15px;
+    align-items: center;
+  }
+  
+  /* flex sections for details */
+  .details-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 240px;
+    justify-content: space-between;
+  }
+  
+  
+  /* container holding all pack selection buttons */
+  .pack-buttons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 145px;
+    justify-content: space-between;
+  }
+  
+  /* each pack select button */
+  .pack-buttons label{ 
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 2px solid black;
+    border-radius: 0px;
+    /* background-color: white; */
+    text-align: center;
+    font-size: small;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  
+  
+  /* hover state */
+  .pack-buttons label:hover{
+    cursor: pointer;
+  }
+  
+  /* removing radio button appearance */
+  .pack-buttons input{
+    display: none;
+  }
+  
+  /* took a little help from stack overflow for this section */
+  /* when checked bg turns grey */
+  .pack-buttons input:checked+label{
+    background-color: grey;
+    border-color: black;
+  }
+  
+  
+  .pack-buttons input:not:checked+label{
+    background-color: white;
+    border-color: black;
+  }
+  
+ 
+  
+  /* Styling CTA button */
+  .cta{
+    font-weight: 400;
+    text-align: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    border-style: solid black;
+    border-radius: 0;
+    padding: 4px 12px;
+    background-color: white;
+  }
+  .cta:hover{
+    background-color: yellow;
+  }
+  
+  /* styling pack numbers buttons */
+  .button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    border-style: 2px solid black;
+    border-radius: 0;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .button:cue{
+    background-color: rgb(156, 156, 156);
+  }
+  
+  /* styling dropdown */
+  .dropdown{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    background-color: white;
+    border: 2px solid black;
+  }
+
+
+  .cart-status{
+    width: 180px;
+    height: 110px;
+    border: 2px solid black;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: white;
+    position: fixed;
+    top: 75px;
+    right: 240px;
+    position:absolute;
+    display: none;
+  }
