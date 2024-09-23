@@ -262,5 +262,6 @@
   top: 75px;
   right: 240px;
   position:absolute;
-  display: none;
+  /* display: none; */
 }
+

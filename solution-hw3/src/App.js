@@ -1,16 +1,40 @@
 import './App.css';
 import Navbar from './navbar';
 import Product from './product';
-
+import React, { useState } from 'react';
+import Cart from './cart';
 
 function App() {
+
+  //set global states
+  const [cartItems, setCartItems] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [items, setItems] = useState(0);
+  const [isCartVisible, setIsCartVisible] = useState(false); 
+
+  const addToCart = (product) => {
+    // add new item to the cart
+    setItems(prev => prev + 1);
+    // update total price
+    setTotal(prev => prev + product.price);
+    
+    setCartItems([product]);
+    //show cart card for 3 seconds
+    setIsCartVisible(true);
+    setTimeout(() => {
+      setIsCartVisible(false);
+    }, 3000);
+  };
+
   return (
-    <body>
-      <Navbar />
+    <div>
+      <Navbar items={items} total={total.toFixed(2)} />
+      {isCartVisible && <Cart cartItems={cartItems} />}
+   
+
       <div className="main-container">
         <div className="grid-container">
-          {/* should have a component that generates these products, thats more general but this is easier for now */}
-          {/* pass props to each product here */}
+
           <Product 
           img = "/assets/products/original-cinnamon-roll.jpg"
           productId = "product1"
@@ -21,7 +45,8 @@ function App() {
           pack2 = "pack2"
           pack3 = "pack3"
           pack4 = "pack4"
-          priceValue = "$2.49" />
+          basePrice = {2.49}
+          addToCart={addToCart} />
 
 
           <Product 
@@ -34,7 +59,8 @@ function App() {
           pack2 = "pack6"
           pack3 = "pack7"
           pack4 = "pack8"
-          priceValue = "$3.49" />
+          basePrice = {3.49}
+          addToCart={addToCart}  />
 
           <Product 
           img = "/assets/products/raisin-cinnamon-roll.jpg"
@@ -46,7 +72,8 @@ function App() {
           pack2 = "pack10"
           pack3 = "pack11"
           pack4 = "pack12"
-          priceValue = "$2.99" />
+          basePrice = {2.99}
+          addToCart={addToCart}  />
 
           <Product 
           img = "/assets/products/walnut-cinnamon-roll.jpg"
@@ -58,7 +85,8 @@ function App() {
           pack2 = "pack14"
           pack3 = "pack15"
           pack4 = "pack16"
-          priceValue = "$3.49" />
+          basePrice = {3.49}
+          addToCart={addToCart}  />
 
           <Product 
           img = "/assets/products/double-chocolate-cinnamon-roll.jpg"
@@ -70,26 +98,27 @@ function App() {
           pack2 = "pack18"
           pack3 = "pack19"
           pack4 = "pack20"
-          priceValue = "$3.99" />
+          basePrice = {3.99}
+          addToCart={addToCart}  />
 
           <Product 
           img = "/assets/products/strawberry-cinnamon-roll.jpg"
-          productId = "product4"
+          productId = "product6"
           title = "Strawberry Cinnamon Roll"
-          glazingId = "glazing4"
-          packName = "radio4"
+          glazingId = "glazing6"
+          packName = "radio6"
           pack2 = "pack21"
           pack3 = "pack22"
           pack1 = "pack23"
           pack4 = "pack24"
-          priceValue = "$3.99" /> 
+          basePrice = {3.99}
+          addToCart={addToCart}  /> 
           
         </div>
       </div>
-    </body>
+    </div>
   );
 }
-
 
 export default App;
 
