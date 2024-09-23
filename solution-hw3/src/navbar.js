@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import logo from "./assets/logo/logo-01.svg";
 
 function Navbar({items, total}){

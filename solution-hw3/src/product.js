@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Cart from './cart';
-// import React, { useState } from 'react';
 
 function Product(props){
 

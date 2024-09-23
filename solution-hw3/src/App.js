@@ -4,6 +4,7 @@ import Product from './product';
 import React, { useState } from 'react';
 import Cart from './cart';
 
+// importing images
 import img1 from "./assets/products/original-cinnamon-roll.jpg";
 import img2 from "./assets/products/apple-cinnamon-roll.jpg";
 import img3 from "./assets/products/raisin-cinnamon-roll.jpg";
@@ -29,6 +30,7 @@ function App() {
     //show cart card for 3 seconds
     setIsCartVisible(true);
     setTimeout(() => {
+      // after 3 seconds cart card is made to disappear
       setIsCartVisible(false);
     }, 3000);
   };
@@ -36,6 +38,8 @@ function App() {
   return (
     <div>
       <Navbar items={items} total={total.toFixed(2)} />
+
+      {/* if cartvisible boolean is set, only then it shows up here */}
       {isCartVisible && <Cart cartItems={cartItems} />}
    
 
