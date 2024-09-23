@@ -36,7 +36,7 @@ function App() {
         <div className="grid-container">
 
           <Product 
-          img = "/assets/products/original-cinnamon-roll.jpg"
+          img = "/images/original-cinnamon-roll.jpg"
           productId = "product1"
           title = "Original Cinnamon Roll"
           glazingId = "glazing1"
@@ -50,7 +50,7 @@ function App() {
 
 
           <Product 
-          img = "/assets/products/apple-cinnamon-roll.jpg"
+          img = "/images/apple-cinnamon-roll.jpg"
           productId = "product2"
           title = "Apple Cinnamon Roll"
           glazingId = "glazing2"
@@ -63,7 +63,7 @@ function App() {
           addToCart={addToCart}  />
 
           <Product 
-          img = "/assets/products/raisin-cinnamon-roll.jpg"
+          img = "/images/raisin-cinnamon-roll.jpg"
           productId = "product3"
           title = "Raisin Cinnamon Roll"
           glazingId = "glazing3"
@@ -76,7 +76,7 @@ function App() {
           addToCart={addToCart}  />
 
           <Product 
-          img = "/assets/products/walnut-cinnamon-roll.jpg"
+          img = "/images/walnut-cinnamon-roll.jpg"
           productId = "product4"
           title = "Walnut Cinnamon Roll"
           glazingId = "glazing4"
@@ -89,7 +89,7 @@ function App() {
           addToCart={addToCart}  />
 
           <Product 
-          img = "/assets/products/double-chocolate-cinnamon-roll.jpg"
+          img = "/images/double-chocolate-cinnamon-roll.jpg"
           productId = "product5"
           title = "Double Chocolate Cinnamon Roll"
           glazingId = "glazing5"
@@ -102,7 +102,7 @@ function App() {
           addToCart={addToCart}  />
 
           <Product 
-          img = "/assets/products/strawberry-cinnamon-roll.jpg"
+          img = "/images/strawberry-cinnamon-roll.jpg"
           productId = "product6"
           title = "Strawberry Cinnamon Roll"
           glazingId = "glazing6"

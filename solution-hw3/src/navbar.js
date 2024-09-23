@@ -4,7 +4,7 @@ function Navbar({items, total}){
     return(
         <div className="navbar-box">
             <div className="nav-left">
-            <img src="/assets/logo/logo-01.svg" className="logo"/>
+            <img src="images/logo-01.svg" className="logo"/>
         </div>
 
         <div className="nav-right">
