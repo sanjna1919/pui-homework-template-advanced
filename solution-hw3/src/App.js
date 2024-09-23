@@ -4,6 +4,13 @@ import Product from './product';
 import React, { useState } from 'react';
 import Cart from './cart';
 
+import img1 from "./assets/products/original-cinnamon-roll.jpg";
+import img2 from "./assets/products/apple-cinnamon-roll.jpg";
+import img3 from "./assets/products/raisin-cinnamon-roll.jpg";
+import img4 from "./assets/products/walnut-cinnamon-roll.jpg";
+import img5 from "./assets/products/double-chocolate-cinnamon-roll.jpg";
+import img6 from "./assets/products/strawberry-cinnamon-roll.jpg";
+
 function App() {
 
   //set global states
@@ -36,7 +43,7 @@ function App() {
         <div className="grid-container">
 
           <Product 
-          img = "/images/original-cinnamon-roll.jpg"
+          img = {img1}
           productId = "product1"
           title = "Original Cinnamon Roll"
           glazingId = "glazing1"
@@ -50,7 +57,7 @@ function App() {
 
 
           <Product 
-          img = "/images/apple-cinnamon-roll.jpg"
+          img = {img2}
           productId = "product2"
           title = "Apple Cinnamon Roll"
           glazingId = "glazing2"
@@ -63,7 +70,7 @@ function App() {
           addToCart={addToCart}  />
 
           <Product 
-          img = "/images/raisin-cinnamon-roll.jpg"
+          img = {img3}
           productId = "product3"
           title = "Raisin Cinnamon Roll"
           glazingId = "glazing3"
@@ -76,7 +83,7 @@ function App() {
           addToCart={addToCart}  />
 
           <Product 
-          img = "/images/walnut-cinnamon-roll.jpg"
+          img = {img4}
           productId = "product4"
           title = "Walnut Cinnamon Roll"
           glazingId = "glazing4"
@@ -89,7 +96,7 @@ function App() {
           addToCart={addToCart}  />
 
           <Product 
-          img = "/images/double-chocolate-cinnamon-roll.jpg"
+          img = {img5}
           productId = "product5"
           title = "Double Chocolate Cinnamon Roll"
           glazingId = "glazing5"
@@ -102,7 +109,7 @@ function App() {
           addToCart={addToCart}  />
 
           <Product 
-          img = "/images/strawberry-cinnamon-roll.jpg"
+          img = {img6}
           productId = "product6"
           title = "Strawberry Cinnamon Roll"
           glazingId = "glazing6"

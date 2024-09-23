@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import logo from "./assets/logo/logo-01.svg";
 
 function Navbar({items, total}){
     return(
         <div className="navbar-box">
             <div className="nav-left">
-            <img src="images/logo-01.svg" className="logo"/>
+            <img src={logo} className="logo"/>
         </div>
 
         <div className="nav-right">
