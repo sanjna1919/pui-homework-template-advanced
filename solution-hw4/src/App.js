@@ -13,7 +13,6 @@ import img5 from "./assets/products/double-chocolate-cinnamon-roll.jpg";
 import img6 from "./assets/products/strawberry-cinnamon-roll.jpg";
 
 function App() {
-
   //set global states
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);

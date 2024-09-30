@@ -3,8 +3,6 @@ function Cart({cartItems}){
     <div className="cart-status" id="cart-status">
         <p className="bodysmall">Added to cart</p>
         <p></p>
-
-        
         <div>
           {cartItems.map((x, index) => (
             <div key={index}>
@@ -15,9 +13,6 @@ function Cart({cartItems}){
             </div>
           ))}
         </div>
-
-
-
     </div>
     
     );
