@@ -49,7 +49,7 @@ function App() {
           <Product 
           img = {img1}
           productId = "product1"
-          title = "Original Cinnamon Roll"
+          title = "OG Cinnamon Roll"
           glazingId = "glazing1"
           packName = "radio1"
           pack1 = "pack1"
