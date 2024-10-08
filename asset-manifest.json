@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pui-homework-template-advanced/static/css/main.b2988b2f.css",
-    "main.js": "/pui-homework-template-advanced/static/js/main.ca680783.js",
+    "main.css": "/pui-homework-template-advanced/static/css/main.587a2ec3.css",
+    "main.js": "/pui-homework-template-advanced/static/js/main.102abd01.js",
     "static/js/453.43a8c446.chunk.js": "/pui-homework-template-advanced/static/js/453.43a8c446.chunk.js",
     "static/media/apple-cinnamon-roll.jpg": "/pui-homework-template-advanced/static/media/apple-cinnamon-roll.49f60af85b0e955dad15.jpg",
     "static/media/double-chocolate-cinnamon-roll.jpg": "/pui-homework-template-advanced/static/media/double-chocolate-cinnamon-roll.dc7182fd330f44e75603.jpg",
@@ -11,12 +11,12 @@
     "static/media/logo-01.svg": "/pui-homework-template-advanced/static/media/logo-01.b2f9cdda6d5cda1ce2ffc47e6b747dd4.svg",
     "static/media/walnut-cinnamon-roll.jpg": "/pui-homework-template-advanced/static/media/walnut-cinnamon-roll.e51000e24310a638db27.jpg",
     "index.html": "/pui-homework-template-advanced/index.html",
-    "main.b2988b2f.css.map": "/pui-homework-template-advanced/static/css/main.b2988b2f.css.map",
-    "main.ca680783.js.map": "/pui-homework-template-advanced/static/js/main.ca680783.js.map",
+    "main.587a2ec3.css.map": "/pui-homework-template-advanced/static/css/main.587a2ec3.css.map",
+    "main.102abd01.js.map": "/pui-homework-template-advanced/static/js/main.102abd01.js.map",
     "453.43a8c446.chunk.js.map": "/pui-homework-template-advanced/static/js/453.43a8c446.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2988b2f.css",
-    "static/js/main.ca680783.js"
+    "static/css/main.587a2ec3.css",
+    "static/js/main.102abd01.js"
   ]
 }
