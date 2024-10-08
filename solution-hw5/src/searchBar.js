@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-function SearchBar({list, setSortedProducts}){
+function SearchBar({list, setSortedProducts, setSearchMessage}){
 
     // state for query that user enters into search box
     const [searchQuery, setSearchQuery] = useState(''); 
@@ -15,15 +15,15 @@ function SearchBar({list, setSortedProducts}){
         const lowerCaseQuery = searchQuery.toLowerCase();
 
         // initialise
-        let filtered = [...list];
+        // let filtered = [...list];
         
         // filtering logic
         const filteredList = list.filter(product => product.title.toLowerCase().includes(lowerCaseQuery)
         );
         setSortedProducts(filteredList);
 
-        if (filteredList === null){
-            document.getElementById("search-result-message").textContent = "No match!";
+        if (filteredList.length === 0){
+            setSearchMessage("No Match!");
         };
     }
 

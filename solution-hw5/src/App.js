@@ -35,7 +35,7 @@ function App() {
   const [isCartExpanded, expandCart] = useState(false);
   // initial order of sorted product list 
   const [sortedProducts, setSortedProducts] = useState(productList);
-
+  const [searchMessage, setSearchMessage] = useState('');
 
 
   const handleCartExpand = (e) =>
@@ -72,7 +72,7 @@ function App() {
   return (
     <div>
       <Navbar items={items} total={total.toFixed(2)} handleCartExpand={handleCartExpand} />
-
+      
       {/* show this cart section component only if cart is expanded */}
       {isCartExpanded && 
         <div className="main-container-cart">
@@ -103,11 +103,11 @@ function App() {
 
       {/* Search bar + Sort dropdown */}
       <div className="search-sort">
-          <SearchBar list={productList}/>
+          <SearchBar list={productList} setSortedProducts={setSortedProducts} setSearchMessage={setSearchMessage}/>
           <SortDropdown list={productList} setSortedProducts={setSortedProducts}/>
       </div>
 
-      <div className="search_result-message"></div>
+      <div className="search-result-message">{searchMessage}</div>
 
       {/* Main product grid */}
       <div className="main-container">
