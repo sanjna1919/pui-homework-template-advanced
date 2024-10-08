@@ -39,23 +39,25 @@ function Product(props){
             glazingText = "Double Chocolate";
         }
 
-
         //price computation
         const computePrice = () => {
             const basePrice = parseFloat(props.basePrice);
             return (basePrice + parseInt(glazingPrice[selectedGlazing])) * packSizePrice[selectedPackSize]; 
         }
 
-        //calc price whenever glazing and packsize states change
+        //calc price whenever selected glazing and selected packsize states change
         useEffect(() => {
             setPrice(computePrice().toFixed(2));
         }, [selectedGlazing, selectedPackSize]);
 
+        // Handler for glazing change
         const handleGlazingChange = (e) => {
             setSelectedGlazing(e.target.value);
         };
         
         // Handler for the pack size radio button change
+        useEffect(() => {
+        }, [selectedPackSize]);
         const handlePackSizeChange = (size) => {
             setSelectedPackSize(size);
         };
@@ -63,6 +65,8 @@ function Product(props){
         //pass thi cartItem object to the addtocart function so it can display details
         const handleAddToCart = () => {
             const cartItem = {
+                // added an image field to this object to show in cart section
+                img: props.img,
                 title:props.title,
                 glazing: glazingText,
                 packSize: selectedPackSize,
@@ -89,17 +93,27 @@ function Product(props){
 
                         <span className="body1">Pack size:</span>
                         <span className="pack-buttons">
-                            <input type="radio" id={props.pack1} name={props.packName} value="1" defaultChecked onChange={() => handlePackSizeChange(1)} />
-                            <label htmlFor={props.pack1}>1</label>
-                            
-                            <input type="radio" id={props.pack2} name={props.packName} value="3" onChange={() => handlePackSizeChange(3)}/>
-                            <label htmlFor={props.pack2}>3</label>
-                            
-                            <input type="radio" id={props.pack3} name={props.packName} value="6" onChange={() => handlePackSizeChange(6)} />
-                            <label htmlFor={props.pack3}>6</label>
-                            
-                            <input type="radio" id={props.pack4} name={props.packName} value="12" onChange={() => handlePackSizeChange(12)} />
-                            <label htmlFor={props.pack4}>12</label> 
+                        
+                            {[1,3,6,12].map((size) => (
+                                <span key={size}>
+                                    <input 
+                                        type="radio" 
+                                        name={props.packName} 
+                                        value={size} 
+                                        // checked={selectedPackSize === size}
+                                        onChange={() => handlePackSizeChange(size)}
+                                    />
+                                    <label
+                                    style={{
+                                       backgroundColor: selectedPackSize === size ? 'grey' : 'white', 
+                                    }}
+                                    onClick={() => handlePackSizeChange(size)} 
+                                    >
+                                        {size}
+                                    </label>
+                                </span>
+                            ))     
+                            }
                         </span>
                         <span className="price-value">${price}</span>
                         <button className="cta" onClick={handleAddToCart}>Add to Cart</button>

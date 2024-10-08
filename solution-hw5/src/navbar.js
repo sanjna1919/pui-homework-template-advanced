@@ -1,6 +1,7 @@
 import logo from "./assets/logo/logo-01.svg";
+import React, { useState } from 'react';
 
-function Navbar({items, total}){
+function Navbar({items, total, handleCartExpand}){
     return(
         <div className="navbar-box">
             <div className="nav-left">
@@ -13,7 +14,7 @@ function Navbar({items, total}){
                     <span className="link">
                         <a href="" >Products</a>
                     </span>
-                    <span className="link">
+                    <span className="link" onClick={handleCartExpand}>
                         <a href="" >Cart</a>
                     </span>
                     <div className="cart-description">
@@ -26,8 +27,11 @@ function Navbar({items, total}){
                     <div className="main-title">Our hand-made cinnamon rolls</div>
                 </div>
             </div>
+
         </div>
     );
+
+
 }
 
 

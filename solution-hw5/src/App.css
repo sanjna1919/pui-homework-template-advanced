@@ -121,6 +121,18 @@
   font-weight: 400;
 }
 
+.body-compress{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.body-compress-bold{
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  line-height: 1.8;
+}
+
 .bodysmall{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -191,18 +203,6 @@
   display: none;
 }
 
-/* took a little help from stack overflow for this section */
-/* when checked bg turns grey */
-.pack-buttons input:checked+label{
-  background-color: grey;
-  border-color: black;
-}
-
-
-.pack-buttons input:not:checked+label{
-  background-color: white;
-  border-color: black;
-}
 
 /* Styling CTA button */
 .cta{
@@ -265,3 +265,76 @@
   /* display: none; */
 }
 
+
+/* styles for expanded cart section */
+/* mimicking the product grid but with smaller  */
+.main-container-cart{
+  margin-left: 180px;
+  margin-right: 180px;
+  border-top: 4px solid grey;
+  border-bottom: 4px solid grey;
+}
+
+.grid-container-cart{
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(5, 200px);
+}
+
+.cart-img{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0px;
+  width: 120px;
+}
+
+.cart-object{
+  /* margin: 30px; */
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding: 10px;
+  width: 220px;
+  font-size: small;
+  line-height: 30%;
+}
+
+.cart-section-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  font-size: medium;
+  padding: 10px 0px;
+}
+
+.cart-total{
+  flex-shrink: calc();
+}
+
+.cart-empty-message{
+  text-align: center;
+  padding: 10px 0px;
+}
+#remove{
+  background: none;      
+  border: none;      
+  text-decoration: underline;
+}
+
+#remove:hover{
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+/* search and sort section */
+.search-sort{
+  background-color: white;
+  padding: 10px;
+  margin-left: 300px; 
+}
+
+.sort-dropdown{
+  margin-left: 50px;
+  margin-right: 30px;
+}
