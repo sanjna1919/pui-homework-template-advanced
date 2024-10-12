@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './navbar';
 import Product from './product';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Cart from './cart';
 import CartSectionItem from './cartSectionItem';
 import SearchBar from './searchBar';
@@ -14,6 +14,18 @@ import img3 from "./assets/products/raisin-cinnamon-roll.jpg";
 import img4 from "./assets/products/walnut-cinnamon-roll.jpg";
 import img5 from "./assets/products/double-chocolate-cinnamon-roll.jpg";
 import img6 from "./assets/products/strawberry-cinnamon-roll.jpg";
+
+
+
+// functions for stringify and parsing some data
+// const stringifyCartItem = (cartItem) => {
+//   return JSON.stringify(cartItem);
+// };
+
+// const parseCartItem = (json) => {
+//   return JSON.parse(json);
+// };
+
 
 // LIST OF PRODUCTS
 const productList = [
@@ -37,6 +49,18 @@ function App() {
   const [sortedProducts, setSortedProducts] = useState(productList);
   const [searchMessage, setSearchMessage] = useState('');
 
+  // on load
+useEffect(() => {
+  const storedCart = localStorage.getItem('cartItems');
+  if (storedCart) {
+      const parsedCart = JSON.parse(storedCart);
+      setCartItems(parsedCart);
+      setItems(parsedCart.length);
+      const totalPrice = parsedCart.reduce((sum, item) => sum + item.price, 0);
+      setTotal(totalPrice);
+  }
+}, []);
+
 
   const handleCartExpand = (e) =>
     {
@@ -44,28 +68,50 @@ function App() {
         expandCart(x => !x);
     };
 
-  const addToCart = (product) => {
-    // add new item to the cart
-    setItems(prev => prev + 1);
-    // update total price
-    setTotal(prev => prev + product.price);
-    
-    setCartItems(prevCartItems => [...prevCartItems, product]);
-    //show cart card for 3 seconds
-    setIsCartVisible(true);
+    const addToCart = (product) => {
+      setCartItems(prev => {
+          const updatedCartItems = [...prev, product];
+          
+          // Update local storage with the new cart items
+          localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+          console.log('Cart in localStorage:', updatedCartItems);
   
-    setTimeout(() => {
-      // after 3 seconds cart card is made to disappear
-      setIsCartVisible(false);
-    }, 3000);
+          // Update items count and total price
+          setItems(updatedCartItems.length);
+          setTotal(prev => prev + product.price);
+          
+          // Show cart card for 3 seconds
+          setIsCartVisible(true);
+          setTimeout(() => {
+              setIsCartVisible(false);
+          }, 3000);
+  
+          return updatedCartItems; // Return the new cart items for state update
+      });
   };
 
   //to remove item from cart
-  const removeItem = (itemToRemove) =>{
-    setCartItems(item => item.filter(x => x.title!== itemToRemove.title && x.price!== itemToRemove.price));
-    setTotal(prev => prev - itemToRemove.price);
-    setItems(prev => prev - 1);
-  };
+  // const removeItem = (itemToRemove) =>{
+  //   setCartItems(item => item.filter(x => x.id !== itemToRemove.id));
+  //   setTotal(prev => prev - itemToRemove.price);
+  //   setItems(prev => prev - 1);
+  //   localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Store in localStorage
+  //   console.log('Cart in localStorage:', cartItems);
+  // };
+
+  const removeItem = (itemToRemove) => {
+    setCartItems(prev => {
+        const updatedCartItems = prev.filter(item => item.id !== itemToRemove.id); // Use id for removal
+        
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+        console.log('Cart in localStorage:', updatedCartItems);
+
+        setTotal(prev => prev - itemToRemove.price);
+        setItems(updatedCartItems.length);
+
+        return updatedCartItems; // Return the new cart items for state update
+    });
+};
 
 
 

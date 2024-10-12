@@ -66,6 +66,8 @@ function Product(props){
         const handleAddToCart = () => {
             const cartItem = {
                 // added an image field to this object to show in cart section
+                // https://www.geeksforgeeks.org/how-to-create-an-unique-id-in-reactjs/
+                id: Date.now(),
                 img: props.img,
                 title:props.title,
                 glazing: glazingText,
