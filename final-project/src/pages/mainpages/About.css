@@ -1,0 +1,76 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 150px;
+    gap: 80px;
+    background-color: var(--background-color);
+}
+.about-image img{
+    width: 300px;
+}
+
+
+.about-header1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.about-header2{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    gap: 24px;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 140px;
+    gap: 16px;
+    background-color: var(--background-color);
+}
+
+.hobbies-text{
+    text-align: center;
+}
+
+.image-carousel {
+    display: flex;
+    gap: 16px; /* Space between images */
+    overflow: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Restrict carousel width to its container */
+}
+
+.image-carousel img {
+    height: 150px; /* Adjust the height of images as needed */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    object-fit: cover; /* Ensure images fill their box properly */
+}
+
+.artwall{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+.note{
+    padding: 16px 24px; /* Add padding around the text */
+    background-color: white;
+    border-radius: 4px; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    color: var(--grey);
+    font-size: 16px;
+    line-height: 1.5; 
+    max-width: 300px; 
+    margin: 16px auto; 
+}

@@ -1,0 +1,60 @@
+@import '../styles/styles.css'; 
+
+.title-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 50px 20px;
+    background-color: var(--background-color);
+    overflow: hidden;
+    text-align: center;
+    height: 500px;
+  }
+  
+  /* Main Content Styling */
+  .title-content {
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .client-logo {
+    width: 100px; 
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Images */
+  .title-image {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0; 
+  }
+  
+  .title-image-left {
+    left: -100px;
+  }
+  
+  .title-image-right {
+    right: -100px;
+  }
+  
+  .client-logo{
+    width: 60px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title-header {
+      font-size: 2rem;
+    }
+    .title-description {
+      font-size: 1rem;
+    }
+    .title-image {
+      width: 150px;
+    }
+  }
+  

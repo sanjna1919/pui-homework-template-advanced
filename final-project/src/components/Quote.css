@@ -1,0 +1,11 @@
+.quote{
+    background-color: var(--primary);
+    padding: 60px 100px;
+  }
+  
+  .quote-body{
+    color: white;
+    font-size: 30px;
+    font-weight: 600px;
+    text-align: center;
+  }

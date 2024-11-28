@@ -1,0 +1,57 @@
+@import '../styles/styles.css'; 
+
+.learning{
+    background-color: var(--background-color);
+    padding: 80px 140px;
+}
+
+
+.learning-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 32px;  
+  background-color: var(--background-color);
+}
+
+
+.learning-card {
+  flex: 1; 
+  max-width: none;
+  min-height: 50px; /* Optional: Set a minimum height for consistency */
+  box-sizing: border-box; 
+  padding: 28px; 
+  border-radius: 16px; 
+  min-height: 200px;
+}
+
+.learning-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 12px; 
+}
+
+
+.learning-body {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-grey);
+  line-height: 1.5;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .learning {
+      padding: 40px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .learning-content {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 12px; /* Reduce gap for smaller screens */
+  }
+
+  .learning-card {
+      flex: unset; /* Disable flex-grow to stack cards naturally */
+  }
+}

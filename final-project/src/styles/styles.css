@@ -1,0 +1,48 @@
+:root {
+    --background-color: #FFEBDA;
+    --black: #303030;
+    --primary: #F87676;
+    --primary-light: #FFD6D6;
+    --grey: #5C5C5C;
+
+    --p1-light: #EDDEFF;
+    --p2-light: #FFC7CB;
+    --p3-light: #FFE4CB;
+    --p4-light: #D0EEF7;
+}
+
+.header1{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+.header0{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 12px;
+    line-height: 150%;
+}
+
+.body{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 150%;
+}
+
+.body-big{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 150%;
+
+}
