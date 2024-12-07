@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
       
       <div className="navbar-right">
-        <Link to="https://drive.google.com/file/d/14DnlRmR77oqJtQPFWlfyPutwAUznscY1/view?usp=sharing" className="resume-btn body">Resume</Link>
+        <Link to="https://drive.google.com/file/d/14DnlRmR77oqJtQPFWlfyPutwAUznscY1/view?usp=sharing" target="_blank" className="resume-btn body">Resume</Link>
       </div>
     </nav>
   );
