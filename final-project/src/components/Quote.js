@@ -4,7 +4,7 @@ import './Quote.css';
 const Quote = ({ content }) => {
   return (
     <div className="quote">
-        <div className="quote-body">{content}</div>
+        <div className="handwriting white">"{content}"</div>
     </div>
   );
 };

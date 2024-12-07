@@ -2,41 +2,49 @@
   {
     "id": 1,
     "color": "var(--p1-light)",
+    "textcolor": "var(--p1-dark)",
     "image": "/images/p1.svg",
     "header": "Reimagining the Indian investor experience with cart for stocks and mutual funds",
     "tags": ["Fintech UX", "E-Commerce"],
     "description": "Introducing e-commerce patterns into fintech by building a cart feature to allow users to seamlessly make multiple financial transactions.",
-    "link": "/project1"
+    "link": "/project1",
+    "alt": "Upstox cart feature screens against a lavender background"
   },
 
   {
       "id": 2,
       "color": "var(--p2-light)",
+      "textcolor": "var(--p2-dark)",
       "image": "/images/p2.svg",
       "header": "Building an Apple Watch app to enhance the BookMyShow experience",
       "tags": ["Wearable UX", "Booking Experience"],
       "description": "Identifying the most critical features of the ticket-booking mobile app BookMyShow with about 70 million users, to design an Apple Watch app experience.",
-      "link": "/project2"
+      "link": "/project2",
+      "alt": "BookMyShow Apple watch app screens against a red background"
     },
 
     {
       "id": 3,
       "color": "var(--p3-light)",
+      "textcolor": "var(--p3-dark)",
       "image": "/images/p3.svg",
       "header": "Designing a filmmakers’ gig-hunting space as the MVP for a startup",
       "tags": ["Visual Design", "Startup MVP"],
       "description": "FLeverage is an online community for filmmaking enthusiasts who are just starting out, to find gigs, connect, network, and engage in healthy competition to hone their skills.",
-      "link": "/project3"
+      "link": "/project3",
+      "alt": "Fleverage app screens against an orange background"
     },
 
     {
       "id": 4,
       "color": "var(--p4-light)",
+      "textcolor": "var(--p4-dark)",
       "image": "/images/p4.svg",
       "header": "Teaching Indian investors about tax by designing a tax-savings investments tracker",
       "tags": ["Fintech UX", "0-1"],
       "description": "This tax-saving investment tracker makes taxes less intimidating by allowing users to easily find ways to save tax and track their tax-saving investments.",
-      "link": "/project4"
+      "link": "/project4",
+      "alt": "Upstox tax savings feature screens against a blue background"
     }
 
     

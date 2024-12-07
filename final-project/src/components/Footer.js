@@ -6,13 +6,12 @@ const Footer = () => {
   return (
   <footer class="footer">
     <div class="footer-top">
-      <p class="footer-text1">I strive to be the person people want to work with.</p>
-      <div className='footer-line2'>
-        <p class="footer-text2">Let's work together.</p>
+      <div class="header2 white lowopacity left">I strive to be the person people want to work with.</div>
+      
+      <span className='footer-line2'>
+        <span class="header2 white left">Let's work together.</span>
         <img className="footer-icon" src="/images/whiteflower.svg"></img>
-      </div>
-      
-      
+      </span>
     </div>
 
     <div class="footer-bottom">

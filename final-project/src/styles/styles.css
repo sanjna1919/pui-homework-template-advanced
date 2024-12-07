@@ -1,6 +1,7 @@
 :root {
-    --background-color: #FFEBDA;
-    --black: #303030;
+    --background-color: #FFF3E8;
+    --black: #404040;
+    --white: #ffffff;
     --primary: #F87676;
     --primary-light: #FFD6D6;
     --grey: #5C5C5C;
@@ -9,40 +10,142 @@
     --p2-light: #FFC7CB;
     --p3-light: #FFE4CB;
     --p4-light: #D0EEF7;
+
+    --p1-dark: #421774;
+    --p2-dark: #B12932;
+    --p3-dark: #954A04;
+    --p4-dark: #297891;
 }
 
+
+/* Import DM Sans Book */
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../public/fonts/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400; 
+    font-style: normal;
+}
+
+/* Import DM Sans SemiBold */
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../public/fonts/DMSans-Bold.ttf') format('truetype');
+    font-weight: 600; 
+    font-style: normal;
+}
+
+/* Import Just Another Hand */
+@font-face {
+    font-family: 'Just Another Hand';
+    src: url('../../public/fonts/JustAnotherHand.ttf') format('truetype');
+    font-weight: 400; 
+    font-style: normal;
+}
+
+
+/* sb */
 .header1{
-    font-size: 32px;
+    font-family: 'DM Sans';
+    font-size: 54px;
     font-weight: 600;
-    text-align: left;
-    padding-bottom: 24px;
+    letter-spacing: -0.03em;
+    color: var(--black);
 }
 
-.header0{
+/* semibold */
+.header2{
+    font-family: 'DM Sans';
     font-size: 40px;
     font-weight: 600;
-    text-align: center;
+    letter-spacing: -0.03em;
+    padding-bottom: 24px;
+    color: var(--black);
+    
 }
 
-.header2{
+.left{
+    text-align: left;
+}
+
+
+
+.with-margin{
+    margin: 0px 15px;
+}
+
+.with-padding{
+    padding: 16px 0px;
+}
+.lowopacity{
+    color: var(--white);
+    opacity: 70%;
+}
+
+.white{
+    color: var(--white);
+}
+
+.black{
+    color: var(--black);
+}
+
+/* for projects */
+.header3{
+    font-family: 'DM Sans';
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    text-align: left; 
+    letter-spacing: -0.03em;
+    color: var(--black);
+}
+
+/* sb */
+.header4{
+    font-family: 'DM Sans';
     font-size: 20px;
     font-weight: 600;
     text-align: left;
     padding-bottom: 12px;
+    letter-spacing: -0.03em;
     line-height: 150%;
+    color: var(--grey);
 }
 
+/* reg */
 .body{
+    font-family: 'DM Sans';
     font-size: 16px;
     font-weight: 400;
     text-align: left;
     line-height: 150%;
+    color: var(--grey);
 }
 
-.body-big{
+.medium{
+    font-family: 'DM Sans';
+    font-size: 18px;
+}
+
+.big{
+    font-family: 'DM Sans';
     font-size: 20px;
+}
+
+/* reg */
+.semibold{
+    font-family: 'DM Sans';
+    font-weight: 600;
+}
+
+.handwriting{
+    font-family: 'Just Another Hand';
+    font-size: 45px;
     font-weight: 400;
     text-align: center;
-    line-height: 150%;
+    letter-spacing: 0.1em;
+}
 
+.centered{
+    text-align: center;
 }

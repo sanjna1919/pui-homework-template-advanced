@@ -2,45 +2,43 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;  /* Distributes items across the navbar */
-    align-items: center;             /* Vertically center the items */
+    justify-content: space-between;  
+    align-items: center;             
     padding: 20px 125px;
-    background-color: var(--background-color);          /* Change background color */
+    background-color: var(--background-color);          
     color: var(--black);
-  }
+}
 
-/* left */
+
   .navbar-left {
     display: flex;
-    align-items: center;             /* Center the icon vertically */
+    align-items: center;            
   }
   .home-icon {
-    width: 35px;  /* Adjust the size of the icon */
+    width: 35px;  
     height: 35px;
     padding-right: 70px;  
   }
 
   .navbar-center {
   display: flex;
-  justify-content: center;        /* Center the links horizontally */
-  flex-grow: 1;                   /* Allow this section to take up remaining space */
+  justify-content: center;       
+  flex-grow: 1;                   
 }
 
 
-  /* right */
   .navbar-right {
     display: flex;
-    justify-content: flex-end;       /* Align the button to the right */
-    padding-right: 20px;             /* Padding to the right */
+    justify-content: flex-end;       
+    padding-right: 20px;             
   }
 
   .resume-btn {
     padding: 8px 24px;
-    background-color: var(--primary-light);       /* Button background color */
-    color: var(--black);                    /* Button text color */
+    background-color: var(--primary-light);       
+    color: var(--black);                    
     border: none;
-    border-radius: 43px;              /* Rounded corners */
-    font-size: 18px;
+    border-radius: 43px;           
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;  
@@ -51,17 +49,14 @@
     color: white;
   }
   
-
   .nav-link {
-    color: var(--black);                   /* White color for text */
-    text-decoration: none;          /* Remove underline */
-    font-size: 18px;                 /* Font size */
-    font-weight: normal;
+    color: var(--black);                  
+    text-decoration: none;          
     padding: 0px 25px;
     transition: color 0.3s ease, text-decoration 0.3s ease; 
   }
   
   .nav-link:hover{
-    color: var(--primary);  /* Change color on hover */
-    text-decoration: underline;   /* Add underline on hover */
+    color: var(--primary);  
+    text-decoration: underline;   
   }

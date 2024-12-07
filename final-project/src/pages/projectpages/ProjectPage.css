@@ -1,5 +1,29 @@
 @import '../../styles/styles.css'; 
+
+
 .content-block{
     padding: 80px 140px;
+    background-color: var(--background-color);
 }
 
+.project-image{
+    background-color: var(--background-color);
+}
+
+.project-image img{
+    width: calc(100% - 280px);
+    padding: 0px 140px;
+}
+
+
+
+@media (max-width: 768px) {
+    .content-block {
+        padding: 40px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .project-image img {
+        width: 100%; /* Full width for smaller screens */
+        padding: 0 20px; /* Adjust padding */
+    }
+}

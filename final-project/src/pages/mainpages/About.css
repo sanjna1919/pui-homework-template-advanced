@@ -1,26 +1,40 @@
+@import '../../styles/styles.css';
+
+
 .hero{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 90px 150px;
     gap: 80px;
     background-color: var(--background-color);
 }
-.about-image img{
-    width: 300px;
+
+
+
+  .about-image-container {
+    position: relative;
+    display: inline-block;
+}
+  
+  .about-image-container img {
+    height: 450px;
+  }
+  
+
+.about-header{
+    display: flex;
+    flex-direction: row;
+    align-items:first baseline;
+    font-size: 20px;
+    gap: 24px;
 }
 
-
-.about-header1{
-    font-size: 48px;
-    font-weight: 600;
-}
-
-.about-header2{
-    font-size: 32px;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 20px;
+.about-name{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
 }
 
 .about-description{
@@ -37,40 +51,106 @@
     align-items: center;
     justify-content: center;
     padding: 90px 140px;
-    gap: 16px;
+    gap: 36px;
     background-color: var(--background-color);
 }
 
-.hobbies-text{
-    text-align: center;
+
+.hobbies-carousel {
+    position: relative;
+    width: 100%;
+    padding: 12px 0px;
+    overflow: hidden; 
 }
+  
 
 .image-carousel {
     display: flex;
-    gap: 16px; /* Space between images */
-    overflow: hidden; /* Prevent horizontal scrolling */
-    width: 100%; /* Restrict carousel width to its container */
+    gap: 24px; 
+    width: max-content; 
+    width: 100%;
 }
 
 .image-carousel img {
-    height: 150px; /* Adjust the height of images as needed */
-    flex-shrink: 0; /* Prevent images from shrinking */
-    object-fit: cover; /* Ensure images fill their box properly */
+    height: 150px; 
+    flex-shrink: 0; 
+    object-fit: cover; 
+    border-radius: 12px;
 }
+
+.image-carousel img:hover {
+    transform: scale(1.05); 
+  } 
+
+  .carousel-image {
+    height: 150px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-text {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
 
 .artwall{
     padding-top: 80px;
     padding-bottom: 80px;
-    
+    height: 500px;
+    background-image: url('/public/images/artwall.svg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
+
 .note{
-    padding: 16px 24px; /* Add padding around the text */
+    padding: 24px 24px;
     background-color: white;
     border-radius: 4px; 
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
     color: var(--grey);
-    font-size: 16px;
-    line-height: 1.5; 
     max-width: 300px; 
     margin: 16px auto; 
 }
+
+.icon {
+    position: absolute;
+}
+
+  
+  .icon-1 {
+    top: 0; left: 0; 
+    transform: translate(-50%, -10%);
+  }
+  
+  .icon-2 {
+    top: 0; left: 0;
+    transform: translate(-0%, -50%);
+  }
+  
+  .icon-3 {
+    top: 0; right: 0;
+    transform: translate(50%, -30%);
+  }
+  
+  .icon-4 {
+    bottom: 0; right: 0;
+    transform: translate(50%, 0%);
+  }

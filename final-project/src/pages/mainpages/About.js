@@ -1,66 +1,174 @@
 import React from 'react';
+import {useState, useEffect, useRef} from 'react';
+import useMeasure from 'react-use/lib/useMeasure';
+import { animate, motion, useMotionValue } from 'framer-motion';
 import '../../pages/mainpages/About.css';
+import hobbyimages from '../../data/hobbyimages.json';
+import noteData from '../../data/noteData.json';
+
 
 const About = () => {
+  
+  const FAST_DURATION = 15;
+  const SLOW_DURATION = 35;
+  const [duration, setDuration] = useState(FAST_DURATION);
+
+  const [mustFinish, setMustFinish] = useState(false);
+  const [rerender, setRerender] = useState(false);
+  const [ref, { width }] = useMeasure();
+  const xTranslation = useMotionValue(0);
+  
+  const containerRef = useRef();
+  const getRandomPosition = (min, max) => Math.random() * (max - min) + min;
+
+  useEffect(() => {
+      const finalPosition = -width / 2 -8; 
+      let controls;
+
+      if (mustFinish){
+        controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
+          ease: 'linear',
+          duration: duration * (1 - xTranslation.get()/finalPosition),
+          onComplete: () => {
+            setMustFinish(false);
+            setRerender(!rerender);
+          }
+        });
+      }else{
+        controls = animate(xTranslation, [0, finalPosition], {
+          ease: 'linear',
+          duration: duration,
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 0
+        });
+      }
+      return controls.stop; 
+    }, [xTranslation, width, duration, rerender]);
+
     return (
       <div className="content">
 
-        <div className="hero">
-          <div className='about-description'>
-            <div className='about-header1'>Call me sun-juh-nah</div>
-            <div className='about-text'>
+       <motion.div className="hero">
+        {/* Header Animation */}
+        <div className="about-text">
+          <motion.div
+            className="about-header"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0, y: -20 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: {
+                  delayChildren: 0.5,
+                  staggerChildren: 0.2,
+                },
+              },
+            }}
+          >
+            <span className="header2 left">Call me</span>
+            <div className="about-name">
+              {['"', 'sun-', 'juh-', 'nah', '"'].map((text, index) => (
+                <motion.span
+                  key={index}
+                  className="handwriting"
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
+                  {text}
+                </motion.span>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Description Animation */}
+          <motion.div
+            className="about-description"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.5, duration: 0.2 }}
+          >
+            <div className="body medium">
               I was born and raised in India, with exposure to a variety of cultures and problems to solve at scale.
             </div>
-            <div className='about-text'>
-              During my undergrad in Computer Science, I discovered a love for UX and led Interaction Design Association, VIT, a local chapter of IxDA, and became the go-to UXer among my engineer classmates.
+            <div className="body medium">
+              During my undergrad in Computer Science in Vellore Institute of Technology, I discovered my love for UX and
+              led Interaction Design Association, VIT, a local chapter of IxDA, and became the go-to UXer among my engineer
+              classmates.
             </div>
-            <div className='about-text'>
-              My tech background enables me to think about complex problems in an expansive, intricate, and logical way. I take a methodical approach to creativity and train it like a muscle every day!
+            <div className="body medium">
+              My tech background enables me to think about complex problems in an expansive, intricate, and logical way. I
+              take a methodical approach to creativity and train it like a muscle every day!
             </div>
-          </div>
-          <div className='about-image'>
-              <img src='/images/sanjna.svg' alt="Sanjna Illustration"></img>
-          </div>
+          </motion.div>
         </div>
+
+        {/* Image Animation */}
+        <motion.div
+          className="about-image-container"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 0.2 }}
+        >
+          <img src="/images/sanjna.png" alt="Image of Sanjna against a green background" />
+          <img src="/images/flower-stroke.svg" className="icon icon-1" />
+          <img src="/images/scribble-stroke.svg" className="icon icon-2" />
+          <img src="/images/star-stroke.svg" className="icon icon-3" />
+          <img src="/images/arrow-stroke.svg" className="icon icon-4" />
+        </motion.div>
+
+      </motion.div>
       
         {/* hobbies */}
         <div className='hobbies'>
           <div className='hobbies-text'>
-            <div className='about-header2'>Why love one thing when you can love the entire world?</div>
-            <div className='about-text'>
-              I was born and raised in India, with exposure to a variety of cultures and problems to solve at scale.
+            <div className='header2'>Why love one thing when you can love the entire world?</div>
+            <div className='body medium centered'>From an early age, I have filled my time with creative hobbies that bring me joy and peace.
             </div>
           </div>
-          <div className='hobbies-carousel'>
-          <div className="image-carousel">
-            <img src="/images/image 1.svg" alt="Image 1" />
-            <img src="/images/image 2.svg" alt="Image 2" />
-            <img src="/images/image 3.svg" alt="Image 3" />
-            <img src="/images/image 4.svg" alt="Image 4" />
-            <img src="/images/image 5.svg" alt="Image 5" />
-            <img src="/images/image 6.svg" alt="Image 6" />
-            <img src="/images/image 7.svg" alt="Image 7" />
-            <img src="/images/image 8.svg" alt="Image 8" />
-            <img src="/images/image 9.svg" alt="Image 9" />
-            <img src="/images/image 10.svg" alt="Image 10" />
-            <img src="/images/image 11.svg" alt="Image 11" />
-          </div>
-          </div>
+          <motion.div className='hobbies-carousel'>
+          <motion.div className="image-carousel" 
+            ref={ref} 
+            style={{x: xTranslation}} 
+            onHoverStart={() => {
+              setDuration(SLOW_DURATION)
+              setMustFinish(true)}}
+            onHoverEnd={() => {
+              setDuration(FAST_DURATION)
+              setMustFinish(true)}}>
+
+              {[...hobbyimages, ...hobbyimages].map((item, index) => (
+                <img key={index} src={item.image} alt={item.alt} />
+              ))}
+        
+          </motion.div>
+          </motion.div>
         </div>
 
 
-        <div className='artwall'>
-          <div className="about-header2">I’ve got a wall full of art and a head full of ideas.</div>
+        <div className='artwall' ref={containerRef}>
+        
+          <div className='header2 withmargin centered white'>I’ve got a wall full of art and a head full of ideas.</div>
           <div className="scattered-notes">
-            <div className="note">Design is about improving networks and systems</div>
-            <div className="note">Even deciding the problem that must be solved comes with assumptions</div>
-            <div className="note">When you are confused about where to go next - do a brain dump.</div>
-            <div className="note">Be comfortable with getting the answers you did not want</div>
-            <div className="note">Ask the right questions and the answers reveal themselves</div>
-            <div className="note">As designers, our business is people</div>
+             {noteData.map((note, index) => (
+                <motion.div key={index} className="note body" 
+                drag 
+                dragConstraints={containerRef}
+                dragElastic={0.1}
+                dragMomentum={true}
+                style={{
+                  position: 'absolute',
+                  top: `calc(${note.top} + ${containerRef.current?.offsetTop}px)`,
+                  left: `calc(${note.left} + ${containerRef.current?.offsetLeft}px)`
+                }}>
+                  {note.note}
+                </motion.div>
+             ))} 
           </div>
-          
-
         </div>
 
       </div>

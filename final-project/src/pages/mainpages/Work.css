@@ -24,12 +24,6 @@
   color: var(--black);
 }
 
-.intro-text {
-  display: flex;
-  align-items: center;
-  margin: 0 15px;
-}
-
 .icon-container {
   display: flex;
   align-items: center;
@@ -62,6 +56,16 @@
   flex-direction: column;
 }
 
+.home-header{
+
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  position: sticky;
+  top:0px;
+  padding: 50px 0px;
+}
+
 /* PROJECTS */
 .project-section{
   padding-top: 100px;
@@ -69,3 +73,7 @@
   background-color: var(--background-color); 
 }
 
+.project-cards{
+  position: sticky;
+  top: 0px;
+}

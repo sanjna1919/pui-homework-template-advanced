@@ -6,20 +6,20 @@ const Summary = ({ role, team, duration, outcome }) => {
   return (
     <div className="summary">
         <div className="element">
-            <div className="header2">Role</div>
-            <div className="body">{role}</div>
+            <div className="header4">Role</div>
+            <div className="body medium">{role}</div>
         </div>
         <div className="element">
-            <div className="header2">Team</div>
-            <div className="body">{team}</div>
+            <div className="header4">Team</div>
+            <div className="body medium">{team}</div>
         </div>
         <div className="element">
-            <div className="header2">Duration</div>
-            <div className="body">{duration}</div>
+            <div className="header4">Duration</div>
+            <div className="body medium">{duration}</div>
         </div>
         <div className="element">
-            <div className="header2">Outcome</div>
-            <div className="body">{outcome}</div>
+            <div className="header4">Outcome</div>
+            <div className="body medium">{outcome}</div>
         </div>
     </div>
   );

@@ -1,32 +1,49 @@
 import React from 'react';
 import './TitleBanner.css';
+import {motion } from 'framer-motion';
 
-const TitleBanner = ({logo, header, description}) => {
+const TitleBanner = ({logo, header, description, logoName, left, right}) => {
   return (
     <div className="title-banner">
-      {/* Left Side Placeholder Image */}
-      <img
-        src="/images/placeholder-left.svg"
-        alt="Placeholder Left"
+      {/* Left Side Image */}
+      <motion.img
+        src={left}
+        alt="Project images"
         className="title-image title-image-left"
+        initial={{ x:-200, opacity: 0 }}
+        animate={{ x:0, opacity: 1 }}
+        transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 0.8 }}
       />
 
       {/* Main Content */}
       <div className="title-content">
-        <img
+        <motion.img
           src={logo}
-          alt="Client Logo"
+          alt={logoName}
           className="client-logo"
+          initial={{ y:20, opacity: 0 }}
+          animate={{ y:0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 2 }}
         />
-        <h1 className="header0">{header}</h1>
-        <p className="body-big">{description}</p>
+        <motion.h1 className="header1 centered" 
+          initial={{ y:20, opacity: 0 }}
+          animate={{ y:0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 2 }}>{header}
+        </motion.h1>
+        <motion.div className="body medium centered" 
+          initial={{ y:20, opacity: 0 }}
+          animate={{ y:0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 2, delay:1}}>{description}</motion.div>
       </div>
 
-      {/* Right Side Placeholder Image */}
-      <img
-        src="/images/placeholder-right.svg"
-        alt="Placeholder Right"
+      {/* Right Side Image */}
+      <motion.img
+        src={right}
+        alt="Project images"
         className="title-image title-image-right"
+        initial={{ x: 200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 0.8 }}
       />
     </div>
   );

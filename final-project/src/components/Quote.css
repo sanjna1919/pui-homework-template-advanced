@@ -1,11 +1,8 @@
+@import '../styles/styles.css';
+
 .quote{
     background-color: var(--primary);
-    padding: 60px 100px;
+    padding: 60px 140px;
+    max-width: 100vw;
   }
   
-  .quote-body{
-    color: white;
-    font-size: 30px;
-    font-weight: 600px;
-    text-align: center;
-  }

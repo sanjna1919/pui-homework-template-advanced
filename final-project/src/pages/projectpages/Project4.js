@@ -3,6 +3,7 @@ import './ProjectPage.css';
 import Summary from '../../components/Summary.js'; 
 import Quote from '../../components/Quote.js'; 
 import Learnings from '../../components/Learnings.js';
+import ProgressBar from '../../components/ProgressBar.js'; 
 import TitleBanner from '../../components/TitleBanner.js';
 
 
@@ -10,10 +11,16 @@ import TitleBanner from '../../components/TitleBanner.js';
 const Project4 = () => {
     return (
         <div className="container">
+            <ProgressBar
+            color = "--p4-dark" />
+
             <TitleBanner 
             logo="images/upstoxtransparent.svg" 
             header = "Teaching Indian investors about tax by designing a tax-savings investments tracker" 
-            description = "Increasing awareness and making taxes less intimidating with a tax-saving investments tracker"/>
+            description = "Increasing awareness and making taxes less intimidating with a tax-saving investments tracker"
+            logoName = "Upstox logo"
+            left = "/images/p4-left.svg"
+            right = "/images/p4-right.svg"/>
             
             <Summary 
             role = "UX Designer" 
@@ -23,7 +30,7 @@ const Project4 = () => {
             
             {/* problem */}
             <div className="content-block">
-                <div className = "header1">Problem</div>
+                <div className = "header3 with-padding">Problem</div>
                 <div className="body">Tax is an intimidating topic! A large majority of users of Upstox are unaware of different completely legal ways of saving taxes by investing smartly by using allowances like Section 80C, 80D and methods like tax loss harvesting.</div>
             </div>
             
@@ -33,9 +40,13 @@ const Project4 = () => {
             
             {/* solution */}
             <div className="content-block">
-                <div className = "header1">Solution</div>
+                <div className = "header3 with-padding">Solution</div>
                 <div className="body">Introduce an "Add to Cart" functionality within the Upstox app, allowing users to browse and add multiple financial assets or products to a cart, adjust quantities and review the entire cart and make a single payment for the entire cart.</div>
             <div className="body">This feature is projected to increase user engagement, attracting new customers to Upstox. Assuming the likelihood of drop off increases with every order placement and a user is looking to invest 3-5 different stocks in a day, cart orders might be give us a lift of 20-30% in conversion and similar impact on AUM.</div>
+            </div>
+
+            <div className = "project-image">
+                <img src='/images/solution4.svg'></img>
             </div>
             
             <Learnings 
