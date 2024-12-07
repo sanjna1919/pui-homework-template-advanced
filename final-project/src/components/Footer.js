@@ -17,12 +17,12 @@ const Footer = () => {
     <div class="footer-bottom">
       <hr class="footer-line" />
       <div class="left-links">
-        <a href="#" class="footer-link">Email</a>
-        <a href="#" class="footer-link">LinkedIn</a>
-        <a href="#" class="footer-link">Medium</a>
+        <a href="mailto:sanjnasubramanian@gmail.com" class="footer-link">Email</a>
+        <a href="https://www.linkedin.com/in/sanjnasubramanian/" class="footer-link">LinkedIn</a>
+        <a href="https://medium.com/@sanjna.sub9" class="footer-link">Medium</a>
       </div>
       <div class="right-link">
-        <Link to="/resume" className="resume-btn">Resume</Link>
+        <Link to="https://drive.google.com/file/d/14DnlRmR77oqJtQPFWlfyPutwAUznscY1/view?usp=sharing" className="resume-btn">Resume</Link>
       </div>
      
     </div>
