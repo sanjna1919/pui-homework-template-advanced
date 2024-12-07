@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "note": "Design is about improving networks and systems",
+        "top":"200px",
+        "left":"800px"
+    },
+    {
+        "id": 2,
+        "note": "Even deciding the problem that must be solved comes with assumptions",
+        "top":"200px",
+        "left":"700px"
+    },
+    {
+        "id": 3,
+        "note": "When you are confused about where to go next - do a brain dump.",
+        "top":"280px",
+        "left":"600px"
+    },
+    {
+        "id": 4,
+        "note": "Be comfortable with getting the answers you did not want",
+        "top":"200px",
+        "left":"300px"
+    },
+    {
+        "id": 5,
+        "note": "Ask the right questions and the answers reveal themselves",
+        "top":"300px",
+        "left":"400px"
+    },
+    {
+        "id": 6,
+        "note": "As designers, our business is people",
+        "top":"400px",
+        "left":"250px"
+    }
+]
