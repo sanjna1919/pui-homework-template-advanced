@@ -1,7 +1,7 @@
 # FP4 Documentation
 
-## Part 1
-### In 300 words (only!) describe your website 
+### Part 1
+#### In 300 words (only!) describe your website 
 My portfolio website is designed to showcase my skills as a product designer through a visually engaging and interactive experience. The primary purpose of the website is to highlight my design expertise, creativity, and technical competency to potential employers, specifically hiring managers in product design and UX roles.
 The website features key sections, including an "About Me" page that tells my personal story and design philosophy, and a "Work" section showcasing selected projects with case studies. I want to show that I am an experienced designer, with a good understanding of UX for industry, with an interest in strategic thinking and domain complexity.
 What makes my portfolio intersting and engaging is the integration of little animations and interactive elements, providing a delightful experience scanning through my portfolio. These little elements are balanced with a clean, simple, and standard layout that ensures quick navigation and a professional presentation.
