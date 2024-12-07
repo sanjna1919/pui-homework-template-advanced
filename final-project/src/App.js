@@ -10,7 +10,7 @@ import Project2 from './pages/projectpages/Project2.js';
 import Project3 from './pages/projectpages/Project3.js';
 import Project4 from './pages/projectpages/Project4.js';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -26,7 +26,6 @@ function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/about" element={<About />} />
 
-            <Route path="/project1" element={<Project1 />} />
             <Route path="/project1" element={<Project1 />} />
             <Route path="/project2" element={<Project2 />} />
             <Route path="/project3" element={<Project3 />} />
