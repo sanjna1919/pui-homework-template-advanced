@@ -48,6 +48,11 @@ const About = () => {
 
     return (
       <div className="content">
+        <noscript>
+          <div className="noscript-message">
+            JavaScript is required to view this page properly. Please enable JavaScript in your browser settings or use a compatible browser.
+          </div>
+        </noscript>
 
        <motion.div className="hero">
         {/* Header Animation */}
@@ -114,11 +119,13 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.2 }}
         >
-          <img src="/images/sanjna.png" alt="Image of Sanjna against a green background" />
-          <img src="/images/flower-stroke.svg" className="icon icon-1" />
-          <img src="/images/scribble-stroke.svg" className="icon icon-2" />
-          <img src="/images/star-stroke.svg" className="icon icon-3" />
-          <img src="/images/arrow-stroke.svg" className="icon icon-4" />
+          
+          
+          <img src={`${process.env.PUBLIC_URL}/images/sanjna.png`} alt="Image of Sanjna against a green background" />
+          <img src={`${process.env.PUBLIC_URL}/images/flower-stroke.svg`} className="icon icon-1" />
+          <img src={`${process.env.PUBLIC_URL}/images/scribble-stroke.svg`} className="icon icon-2" />
+          <img src={`${process.env.PUBLIC_URL}/images/star-stroke.svg`} className="icon icon-3" />
+          <img src={`${process.env.PUBLIC_URL}/images/arrow-stroke.svg`} className="icon icon-4" />
         </motion.div>
 
       </motion.div>

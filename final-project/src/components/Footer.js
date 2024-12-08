@@ -10,7 +10,7 @@ const Footer = () => {
       
       <span className='footer-line2'>
         <span class="header2 white left">Let's work together.</span>
-        <img className="footer-icon" src="/images/whiteflower.svg"></img>
+        <img className="footer-icon" alt="flower" src={`${process.env.PUBLIC_URL}/images/whiteflower.svg`}></img>
       </span>
     </div>
 

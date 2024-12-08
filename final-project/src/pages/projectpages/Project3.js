@@ -10,6 +10,11 @@ import TitleBanner from '../../components/TitleBanner.js';
 const Project3 = () => {
     return (
         <div className="container">
+            <noscript>
+                <div className="noscript-message">
+                    JavaScript is required to view this page properly. Please enable JavaScript in your browser settings or use a compatible browser.
+                </div>
+            </noscript>
             
             <ProgressBar
             color = "--p3-dark" />
