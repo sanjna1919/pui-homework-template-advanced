@@ -14,7 +14,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/pui-homework-template-advanced">
       <ScrollToTop />
       <div className="App">
         {/* Navbar is always constant */}
