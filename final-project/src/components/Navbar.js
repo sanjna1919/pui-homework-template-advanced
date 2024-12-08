@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <Link to="/" className="home-link">
-          <img src="images/flower.svg" alt="Home" className="home-icon"/>
+          <img src={`${process.env.PUBLIC_URL}/images/homeicon.svg`} alt="Home" className="home-icon"/>
         </Link>
       </div>
       

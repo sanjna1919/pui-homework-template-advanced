@@ -3,6 +3,7 @@ import './ProjectCard.css';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
+
 const ProjectCard = ({ color, image, header, tags, description, link, textcolor, alt }) => {
   
 

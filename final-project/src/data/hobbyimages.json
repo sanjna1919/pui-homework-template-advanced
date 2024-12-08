@@ -1,31 +1,31 @@
 [
     {
         "id": 1,
-        "image": "/images/image 1.png",
+        "image": "./images/image 1.png",
         "alt": "A mushroom sandwich Sanjna made",
         "description": "Isn't cooking and eating what we live for?"
     },
     {
         "id": 2,
-        "image": "/images/image 2.png",
+        "image": "./images/image 2.png",
         "alt": "Pretty pressed yellow flowers stored in phone case",
         "description": "Finding pretty flowers and pressing them"
     },
     {
         "id": 3,
-        "image": "/images/image 3.png",
+        "image": "./images/image 3.png",
         "alt": "An image of the organising committee of Gradience, a product design conference I led in my college",
         "description": "Running a design chapter in college - part of something bigger"
     },
     {
         "id": 4,
-        "image": "/images/image 4.png",
+        "image": "./images/image 4.png",
         "alt": "Sanjna playing her black electric guitar",
         "description": ""
     },
     {
         "id": 5,
-        "image": "/images/image 5.png",
+        "image": "./images/image 5.png",
         "alt": "A stack of non-fiction books",
         "description": "Learning complicated stuff for fun"
     },

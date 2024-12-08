@@ -266,7 +266,7 @@ const Work = () => {
       <motion.div className="hero-banner2" variants={parentVariants}>
         <motion.div className="experience" variants={itemVariantsMovement}>
           <div className="left">
-            <img src="/images/cmu.svg" alt="CMU logo" />
+            <img src={`${process.env.PUBLIC_URL}/images/cmu.svg`} alt="CMU logo" />
           </div>
           <div className="right">
             <div className="body">currently</div>
@@ -276,7 +276,7 @@ const Work = () => {
 
         <motion.div className="experience" variants={itemVariantsMovement}>
           <div className="left">
-            <img src="/images/upstox.svg" alt="Upstox logo" />
+            <img src={`${process.env.PUBLIC_URL}/images/upstox.svg`} alt="Upstox logo" />
           </div>
           <div className="right">
             <div className="body">previously</div>

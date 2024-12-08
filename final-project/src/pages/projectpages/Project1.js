@@ -23,8 +23,8 @@ const Project1 = () => {
             header = "Reimagining the Indian investor experience with cart for stocks and mutual funds" 
             description = "I introduced e-commerce patterns into fintech by building a cart feature to allow users to seamlessly make multiple financial transactions."
             logoName = "Upstox logo"
-            left = "/images/p1-left.svg"
-            right = "/images/p1-right.svg"/>
+            left = "{`${process.env.PUBLIC_URL}/images/p1-left.svg`}"
+            right = "{`${process.env.PUBLIC_URL}/images/p1-right.svg`}"/>
             
 
             <Summary 

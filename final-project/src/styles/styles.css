@@ -2,7 +2,7 @@
     --background-color: #FFF3E8;
     --black: #404040;
     --white: #ffffff;
-    --primary: #F97777;
+    --primary: #C43C4E;
     --primary-light: #FFD6D6;
     --grey: #5C5C5C;
 
@@ -78,7 +78,7 @@
 }
 .lowopacity{
     color: var(--white);
-    opacity: 70%;
+    opacity: 80%;
 }
 
 .white{

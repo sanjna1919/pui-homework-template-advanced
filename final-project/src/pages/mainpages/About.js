@@ -6,6 +6,10 @@ import '../../pages/mainpages/About.css';
 import hobbyimages from '../../data/hobbyimages.json';
 import noteData from '../../data/noteData.json';
 
+const imageImports = hobbyimages.map(img => ({
+  ...img,
+  image: `${process.env.PUBLIC_URL}/images/${img.image}` // Correctly resolve images based on the public folder
+}));
 
 const About = () => {
   
@@ -148,9 +152,9 @@ const About = () => {
               setDuration(FAST_DURATION)
               setMustFinish(true)}}>
 
-              {[...hobbyimages, ...hobbyimages].map((item, index) => (
-                <img key={index} src={item.image} alt={item.alt} />
-              ))}
+{imageImports.map((item, index) => (
+              <img key={index} src={item.image} alt={item.alt} />
+            ))}
         
           </motion.div>
           </motion.div>
