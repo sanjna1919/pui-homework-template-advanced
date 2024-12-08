@@ -10,7 +10,7 @@ import Project2 from './pages/projectpages/Project2.js';
 import Project3 from './pages/projectpages/Project3.js';
 import Project4 from './pages/projectpages/Project4.js';
 
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
