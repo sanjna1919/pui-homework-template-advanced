@@ -67,6 +67,8 @@ Here are some screenshots to show accessibility from the WAVE Evaluation tool of
 ![alt text](image-7.png)
 
 #### Project Page 
+![alt text](image-8.png)
+![alt text](image-9.png)
 
 
 ### Responsivity
@@ -74,5 +76,13 @@ Please test this website between the following maximum and minimum screen sizes,
 * Max width (Desktop) = 1440px
 * Min Width (for example, iPad Air) = 820px
 
+#### Some Screenshots
+![alt text](image-10.png)
+![alt text](image-11.png)
+![alt text](image-12.png)
+![alt text](image-13.png)
+![alt text](image-14.png)
+![alt text](image-15.png)
+![alt text](image-16.png)
 
 #### Note: I have used image imports for some of the images since using the image paths normally was not working post-deployment.
