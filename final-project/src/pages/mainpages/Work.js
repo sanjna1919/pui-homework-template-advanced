@@ -283,7 +283,7 @@ const Work = () => {
         {/* cmu section */}
         <motion.div className="experience" variants={itemVariantsMovement}>
           <div className="left">
-            <img src={`${process.env.PUBLIC_URL}/images/cmu.svg`} alt="CMU logo" />
+            <img src={`${process.env.PUBLIC_URL}/images/cmu.png`} alt="CMU logo" />
           </div>
           <div className="right">
             <div className="body">currently</div>
@@ -294,7 +294,7 @@ const Work = () => {
         {/* upstox section */}
         <motion.div className="experience" variants={itemVariantsMovement}>
           <div className="left">
-            <img src={`${process.env.PUBLIC_URL}/images/upstox.svg`} alt="Upstox logo" />
+            <img src={`${process.env.PUBLIC_URL}/images/upstox.png`} alt="Upstox logo" />
           </div>
           <div className="right">
             <div className="body">previously</div>
