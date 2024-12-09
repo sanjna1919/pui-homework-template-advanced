@@ -54,11 +54,14 @@ _Example of error debugging_
 ![image](https://github.com/user-attachments/assets/ea833bd4-9bd7-4ec6-abd4-ffd697e6683c)
 ![image](https://github.com/user-attachments/assets/6d8c6a7d-f8a4-4e6f-8871-34c6b31e214b)
 
+
 _Example of asking for a component_
 ![image](https://github.com/user-attachments/assets/9ad9c72e-e279-473a-9b4a-89a32e64a276)
 
+
 _Example of using it for explanations_
 ![image](https://github.com/user-attachments/assets/b0cd79c4-a2af-4ce4-a030-e2a85dea5691)
+
 
 _Example of AI giving a strange hallucination as an output_
 ![image](https://github.com/user-attachments/assets/f3e92e47-9562-441d-9520-ba47a0535fb0)
@@ -76,9 +79,11 @@ Here are some screenshots to show accessibility from the WAVE Evaluation tool of
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 
+
 #### About Page
 ![alt text](image-6.png)
 ![alt text](image-7.png)
+
 
 #### Project Page 
 ![alt text](image-8.png)
@@ -92,11 +97,18 @@ Please test this website between the following maximum and minimum screen sizes,
 
 #### Some Screenshots
 ![alt text](image-10.png)
+
 ![alt text](image-11.png)
+
 ![alt text](image-12.png)
+
 ![alt text](image-13.png)
+
 ![alt text](image-14.png)
+
 ![alt text](image-15.png)
+
 ![alt text](image-16.png)
+
 
 #### Note: I have used image imports for some of the images since using the image paths normally was not working post-deployment.
