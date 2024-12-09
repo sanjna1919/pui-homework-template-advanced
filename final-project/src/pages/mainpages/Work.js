@@ -5,9 +5,9 @@ import Quote from '../../components/Quote.js';
 import ProjectCard from '../../components/ProjectCard.js';
 import projectData from '../../data/projectData.json';
 
-import p1 from '../../images/p1.svg';
-import p2 from '../../images/p2.svg';
-import p3 from '../../images/p3.svg';
+import p1 from '../../images/p1.png';
+import p2 from '../../images/p2.png';
+import p3 from '../../images/p3.png';
 import p4 from '../../images/p4.png';
 
 const pImageList = [p1, p2, p3, p4];
