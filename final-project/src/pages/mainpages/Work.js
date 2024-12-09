@@ -8,7 +8,7 @@ import projectData from '../../data/projectData.json';
 import p1 from '../../images/p1.svg';
 import p2 from '../../images/p2.svg';
 import p3 from '../../images/p3.svg';
-import p4 from '../../images/p4.svg';
+import p4 from '../../images/p4.png';
 
 const pImageList = [p1, p2, p3, p4];
 

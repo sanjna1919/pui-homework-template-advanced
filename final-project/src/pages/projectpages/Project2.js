@@ -5,9 +5,9 @@ import Quote from '../../components/Quote.js';
 import Learnings from '../../components/Learnings.js';
 import TitleBanner from '../../components/TitleBanner.js';
 
-import p2left from '../../images/p2-left.svg';
-import p2right from '../../images/p2-left.svg';
-import s2 from '../../images/solution2.svg';
+import p2left from '../../images/p2-left.png';
+import p2right from '../../images/p2-left.png';
+import s2 from '../../images/solution2.png';
 
 // bms
 const Project2 = () => {

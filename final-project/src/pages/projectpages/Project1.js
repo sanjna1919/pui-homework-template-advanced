@@ -6,9 +6,9 @@ import ProgressBar from '../../components/ProgressBar.js';
 import Learnings from '../../components/Learnings.js';
 import TitleBanner from '../../components/TitleBanner.js';
 
-import p1left from '../../images/p1-left.svg';
-import p1right from '../../images/p1-left.svg';
-import s1 from '../../images/solution1.svg';
+import p1left from '../../images/p1-left.png';
+import p1right from '../../images/p1-left.png';
+import s1 from '../../images/solution1.png';
 
 // upstox cart
 const Project1 = () => {
@@ -55,7 +55,7 @@ const Project1 = () => {
             </div>
 
             <div className = "project-image">
-                <img src={s1}></img>
+                <img src={s1} alt=""></img>
             </div>
             
             

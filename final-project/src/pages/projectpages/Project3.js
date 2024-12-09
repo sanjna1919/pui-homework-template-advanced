@@ -6,9 +6,9 @@ import ProgressBar from '../../components/ProgressBar.js';
 import Learnings from '../../components/Learnings.js';
 import TitleBanner from '../../components/TitleBanner.js';
 
-import p3left from '../../images/p3-left.svg';
-import p3right from '../../images/p3-right.svg';
-import s3 from '../../images/solution3.svg';
+import p3left from '../../images/p3-left.png';
+import p3right from '../../images/p3-right.png';
+import s3 from '../../images/solution3.png';
 
 // flev
 const Project3 = () => {

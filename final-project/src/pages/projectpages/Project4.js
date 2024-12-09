@@ -6,9 +6,9 @@ import Learnings from '../../components/Learnings.js';
 import ProgressBar from '../../components/ProgressBar.js'; 
 import TitleBanner from '../../components/TitleBanner.js';
 
-import p4left from '../../images/p4-left.svg';
-import p4right from '../../images/p4-right.svg';
-import s4 from '../../images/solution4.svg';
+import p4left from '../../images/p4-left.png';
+import p4right from '../../images/p4-right.png';
+import s4 from '../../images/solution4.png';
 
 // tax
 const Project4 = () => {
