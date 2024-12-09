@@ -5,6 +5,9 @@ import Quote from '../../components/Quote.js';
 import ProjectCard from '../../components/ProjectCard.js';
 import projectData from '../../data/projectData.json';
 
+import cmu from '../../images/cmu.png';
+import upstox from '../../images/upstox.png';
+
 import p1 from '../../images/p1.png';
 import p2 from '../../images/p2.png';
 import p3 from '../../images/p3.png';
@@ -283,7 +286,7 @@ const Work = () => {
         {/* cmu section */}
         <motion.div className="experience" variants={itemVariantsMovement}>
           <div className="left">
-            <img src={`${process.env.PUBLIC_URL}/images/cmu.png`} alt="CMU logo" />
+            <img src={cmu} alt="CMU logo" />
           </div>
           <div className="right">
             <div className="body">currently</div>
@@ -294,7 +297,7 @@ const Work = () => {
         {/* upstox section */}
         <motion.div className="experience" variants={itemVariantsMovement}>
           <div className="left">
-            <img src={`${process.env.PUBLIC_URL}/images/upstox.png`} alt="Upstox logo" />
+            <img src={upstox} alt="Upstox logo" />
           </div>
           <div className="right">
             <div className="body">previously</div>

@@ -73,3 +73,6 @@ Here are some screenshots to show accessibility from the WAVE Evaluation tool of
 Please test this website between the following maximum and minimum screen sizes,
 * Max width (Desktop) = 1440px
 * Min Width (for example, iPad Air) = 820px
+
+
+#### Note: I have used image imports for some of the images since using the image paths normally was not working post-deployment.
