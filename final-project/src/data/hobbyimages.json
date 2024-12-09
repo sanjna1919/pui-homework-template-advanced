@@ -1,67 +1,56 @@
 [
     {
         "id": 1,
-        "image": "./images/image 1.png",
         "alt": "A mushroom sandwich Sanjna made",
         "description": "Isn't cooking and eating what we live for?"
     },
     {
         "id": 2,
-        "image": "./images/image 2.png",
         "alt": "Pretty pressed yellow flowers stored in phone case",
         "description": "Finding pretty flowers and pressing them"
     },
     {
         "id": 3,
-        "image": "./images/image 3.png",
         "alt": "An image of the organising committee of Gradience, a product design conference I led in my college",
         "description": "Running a design chapter in college - part of something bigger"
     },
     {
         "id": 4,
-        "image": "./images/image 4.png",
         "alt": "Sanjna playing her black electric guitar",
         "description": "Guitar taught me patience"
     },
     {
         "id": 5,
-        "image": "./images/image 5.png",
         "alt": "A stack of non-fiction books",
         "description": "Learning complicated stuff for fun"
     },
     {
         "id": 6,
-        "image": "/images/image 6.png",
         "alt": "A cute sleeping cat",
         "description": "I dream of having a pet kitten some day"
     },
     {
         "id": 7,
-        "image": "/images/image 7.png",
         "alt": "A modular origami creation by Sanjna",
         "description": "Working with my hands is meditative"
     },
     {
         "id": 8,
-        "image": "/images/image 8.png",
         "alt": "Painting of a mountain Sanjna made",
         "description": "I like to make art in any capacity"
     },
     {
         "id": 9,
-        "image": "/images/image 9.png",
         "alt": "Sanjna singing Indian classical music",
         "description": "Learned Indian classical singing for years"
     },
     {
         "id": 10,
-        "image": "/images/image 10.png",
         "alt": "A collection of mini clay figures Sanjna made",
         "description": "Clay modelling little desk buddies"
     },
     {
         "id": 11,
-        "image": "/images/image 11.png",
         "alt": "Sanjna looking at the breezy Mumbai coastline",
         "description": "The sea and the breeze in busy Mumbai"
     }

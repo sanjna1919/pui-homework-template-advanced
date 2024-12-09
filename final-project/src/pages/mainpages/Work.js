@@ -287,7 +287,7 @@ const Work = () => {
           </div>
           <div className="right">
             <div className="body">currently</div>
-            <div className="header4">MHCI @ Carnegie Mellon</div>
+            <a className="header4" href="https://hcii.cmu.edu">MHCI @ Carnegie Mellon</a>
           </div>
         </motion.div>
 
@@ -298,7 +298,7 @@ const Work = () => {
           </div>
           <div className="right">
             <div className="body">previously</div>
-            <div className="header4">UX Design @ Upstox India</div>
+            <a className="header4" href="https://upstox.com">UX Design @ Upstox India</a>
           </div>
           </motion.div>
       </motion.div>
@@ -307,7 +307,7 @@ const Work = () => {
 
 
       {/* Project Cards */}
-      <motion.div className="project-section" >
+      <motion.div className="project-section" id='#project-section'>
         <div className="header2 centered">Selected Projects</div>
         <div className="project-cards">
         {projectData.map((project, index) => (
