@@ -50,6 +50,20 @@ One challenge I faced was the learning curve with Framer Motion, particularly un
 
 * AI sometimes gives outputs that look okay but absolutely do not work in the intended way when executed. It cannot give complete outputs from scratch for complex prompts, having code to work with that I pulled from another site or a video was usually a good jumping off point for ChatGPT to edit and help me out. It can do basic code really well and that is where its strengths lie, it’s not the best for really complex interactions/descriptions. In those cases it might just be faster to write the code from scratch than to prompt the AI. A specific limitation I found was when I asked AI to help me make my site responsive by supplying it my code - it didn’t really work, I had to write the code manually. I was initially pleased with ChatGPT, but overall quite shocked at how deceptively low-quality some of the outputs were, and how sometimes AI would completely misunderstand or ignore things that I would ask it to do. Although, the most useful case is probably for debugging and parsing code to see where errors come from.
 
+_Example of error debugging_
+![image](https://github.com/user-attachments/assets/ea833bd4-9bd7-4ec6-abd4-ffd697e6683c)
+![image](https://github.com/user-attachments/assets/6d8c6a7d-f8a4-4e6f-8871-34c6b31e214b)
+
+_Example of asking for a component_
+![image](https://github.com/user-attachments/assets/9ad9c72e-e279-473a-9b4a-89a32e64a276)
+
+_Example of using it for explanations_
+![image](https://github.com/user-attachments/assets/b0cd79c4-a2af-4ce4-a030-e2a85dea5691)
+
+_Example of AI giving a strange hallucination as an output_
+![image](https://github.com/user-attachments/assets/f3e92e47-9562-441d-9520-ba47a0535fb0)
+
+
 
 # Appendix (Accessibility + Responsivity)
 
