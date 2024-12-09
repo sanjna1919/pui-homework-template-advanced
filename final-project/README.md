@@ -10,12 +10,12 @@ The target audience for my portfolio includes hiring managers, recruiters, and d
 
 ### Part 2
 #### Use a bulleted list to describe how a user would interact with your website. 
-* Progressive Header with SVG Tracing (Work page)
-* Card stacking (Work page)
-* Custom cursor (Work page)
-* Delightful description (About page)
-* Hobbies carousel (About page)
-* Art + ideas (About page)
+* Progressive Header with SVG Tracing (Work page) - the SVG icons trace and fill up while the header animates progressively to add delight.
+* Custom cursor (Work page) - on hovering over a project card, a custome cursor appears.
+* Delightful description (About page) - the description animates progressively to add delight
+* Images moving in on Project Pages - the descriptive images move into the frame on the project pages
+* Hobbies carousel (About page) - there is a carousel of images on the About page, the images move at a certain speed and on hover, the speed reduces, focusing the carousel. On hover, there is also an overlay with a description.
+* Art + ideas (About page) - there is an art wall with draggable cards with messages, the cards have some momentum to add interactivity to the section.
 
 
 ### Part 3
@@ -30,7 +30,7 @@ The target audience for my portfolio includes hiring managers, recruiters, and d
 ### Part 4
 #### Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website.
 
-While implementing my site, I decided to get rid of the winding path on the work page as it did not convey the right message visually. I went with a stacking cards approach instead which added a dynamic feel to the page compared to a simple layout. I did find it difficult to get resources to implement the exact style I wanted so I ended up resorting to something similar in the interest of time.
+While implementing my site, I decided to get rid of the winding path on the work page as it did not convey the right message visually. I went with a stacking cards approach instead which added a dynamic feel to the page compared to a simple layout. I did find it difficult to get resources to implement the exact style I wanted so I ended up resorting to a simpler structure in the interest of time.
 I do feel that I did a good job scoping this project and was very realistic with what I could achieve in the span of a few weeks. Although I did struggle with some parts of the animations, I was still able to push myself and finish coding almost all of it.
 
 
