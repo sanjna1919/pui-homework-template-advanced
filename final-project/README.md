@@ -95,7 +95,7 @@ Please test this website between the following maximum and minimum screen sizes,
 * Max width (Desktop) = 1440px
 * Min Width (for example, iPad Air) = 820px
 
-#### Some Screenshots
+#### Some Screenshots of sections where I made explicit media queries to accomodate for the smaller screen size
 ![alt text](image-10.png)
 
 ![alt text](image-11.png)
