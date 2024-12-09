@@ -30,7 +30,7 @@ const TitleBanner = ({logo, header, description, logoName, left, right}) => {
           animate={{ y:0, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 2 }}>{header}
         </motion.h1>
-        <motion.div className="body medium centered" 
+        <motion.div className="body medium centered grey" 
           initial={{ y:20, opacity: 0 }}
           animate={{ y:0, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 2, delay:1}}>{description}</motion.div>

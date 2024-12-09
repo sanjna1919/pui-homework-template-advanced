@@ -3,14 +3,16 @@ import {useState, useEffect, useRef} from 'react';
 import useMeasure from 'react-use/lib/useMeasure';
 import { animate, motion, useMotionValue } from 'framer-motion';
 import '../../pages/mainpages/About.css';
-import hobbyimages from '../../data/hobbyimages.json';
+import hobbyImages from '../../data/hobbyimages.json';
 import noteData from '../../data/noteData.json';
 
-const imageImports = hobbyimages.map(img => ({
-  ...img,
-  image: `${process.env.PUBLIC_URL}/images/${img.image}` // Correctly resolve images based on the public folder
-}));
 
+// function to import images, map through them and put them in a list
+const imageList = Array.from({ length: 11 }, (_, index) =>
+  require(`../../images/image ${index + 1}.png`)
+);
+
+// main component
 const About = () => {
   
   const FAST_DURATION = 15;
@@ -101,15 +103,15 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.2 }}
           >
-            <div className="body medium">
+            <div className="body medium grey">
               I was born and raised in India, with exposure to a variety of cultures and problems to solve at scale.
             </div>
-            <div className="body medium">
+            <div className="body medium grey">
               During my undergrad in Computer Science in Vellore Institute of Technology, I discovered my love for UX and
               led Interaction Design Association, VIT, a local chapter of IxDA, and became the go-to UXer among my engineer
               classmates.
             </div>
-            <div className="body medium">
+            <div className="body medium grey">
               My tech background enables me to think about complex problems in an expansive, intricate, and logical way. I
               take a methodical approach to creativity and train it like a muscle every day!
             </div>
@@ -123,8 +125,6 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.2 }}
         >
-          
-          
           <img src={`${process.env.PUBLIC_URL}/images/sanjna.png`} alt="Image of Sanjna against a green background" />
           <img src={`${process.env.PUBLIC_URL}/images/flower-stroke.svg`} className="icon icon-1" />
           <img src={`${process.env.PUBLIC_URL}/images/scribble-stroke.svg`} className="icon icon-2" />
@@ -137,8 +137,8 @@ const About = () => {
         {/* hobbies */}
         <div className='hobbies'>
           <div className='hobbies-text'>
-            <div className='header2'>Why love one thing when you can love the entire world?</div>
-            <div className='body medium centered'>From an early age, I have filled my time with creative hobbies that bring me joy and peace.
+            <div className='header2 centered'>Why love one thing when you can love the entire world?</div>
+            <div className='body medium centered grey'>From an early age, I have filled my time with creative hobbies that bring me joy and peace.
             </div>
           </div>
           <motion.div className='hobbies-carousel'>
@@ -152,9 +152,14 @@ const About = () => {
               setDuration(FAST_DURATION)
               setMustFinish(true)}}>
 
-{imageImports.map((item, index) => (
-              <img key={index} src={item.image} alt={item.alt} />
-            ))}
+           {imageList.map((image, index) => (
+            <div key={index} className="image-container">
+              <img src={image} alt={`Image ${index + 1}`} />
+              <div className="overlay">
+                <div className="body small with-margin centered white">{hobbyImages[index].description}</div>
+              </div>
+            </div>
+           ))}
         
           </motion.div>
           </motion.div>
@@ -164,6 +169,7 @@ const About = () => {
         <div className='artwall' ref={containerRef}>
         
           <div className='header2 withmargin centered white'>I’ve got a wall full of art and a head full of ideas.</div>
+          <div className='body small centered white'>You can drag these cards around!</div>
           <div className="scattered-notes">
              {noteData.map((note, index) => (
                 <motion.div key={index} className="note body" 

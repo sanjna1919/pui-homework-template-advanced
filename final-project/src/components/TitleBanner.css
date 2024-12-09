@@ -1,7 +1,5 @@
 @import '../styles/styles.css'; 
 
-
-
    .title-banner {
     display: flex;
     justify-content: center;
@@ -44,9 +42,48 @@
     right: -120px; /* Move right image further outside the viewport */
   }
   
+
+
+  @media (max-width: 1200px) {
+    .header1 {
+      font-size: 40px;
+    }
+    .title-content {
+      max-width: 400px;
+    }
+    .title-image-left {
+      position: absolute;
+      left: -180px;/* Move left image further outside the viewport */
+    }
+    
+    .title-image-right {
+      position: absolute;
+      right: -180px; /* Move right image further outside the viewport */
+    }
+  }
+
+
+  @media (max-width: 950px) {
+    .header1 {
+      font-size: 40px;
+    }
+    .title-image-left {
+      position: absolute;
+      left: -200px;/* Move left image further outside the viewport */
+    }
+    
+    .title-image-right {
+      position: absolute;
+      right: -200px; /* Move right image further outside the viewport */
+    }
+  }
+
   @media (max-width: 768px) {
-    .title-header {
-      font-size: 2rem;
+    .header1 {
+      font-size: 32px;
+    }
+    .title-content {
+      max-width: 400px;
     }
     .title-description {
       font-size: 1rem;

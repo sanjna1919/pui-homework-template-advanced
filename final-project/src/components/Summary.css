@@ -1,14 +1,22 @@
 @import '../styles/styles.css'; 
 
 /* Container styling for the summary */
+.summary-box{
+    display: block;
+    background-color: var(--background-color);
+    justify-content: center;
+}
+
 .summary {
     display: flex; 
-    justify-content: space-between;
-    padding: 60px 140px;
-    align-items: flex-start; 
+    /* justify-content: space-between; */
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
     gap: 16px; 
     background-color: var(--background-color);
-
 }
 
 .element {
@@ -17,11 +25,14 @@
 }
 
 
-
-
-.summary-content {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--grey);
-    line-height: 1.5; /* Improve text readability */
-}
+/* @media (max-width: 1050px) {
+    .header1 {
+      font-size: 36px;
+    }
+    .header2{
+      font-size: 30px;
+    }
+    .header4{
+      font-size: 16px;
+    }
+  } */

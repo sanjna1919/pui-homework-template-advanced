@@ -45,7 +45,7 @@
     gap: 24px;
 }
 
-.hobbies{
+  .hobbies {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,40 +53,37 @@
     padding: 90px 140px;
     gap: 36px;
     background-color: var(--background-color);
-}
-
-
-.hobbies-carousel {
+  }
+  
+  .hobbies-carousel {
     position: relative;
     width: 100%;
     padding: 12px 0px;
-    overflow: hidden; 
-}
+    overflow: hidden;
+  }
   
-
-.image-carousel {
+  .image-carousel {
     display: flex;
-    gap: 24px; 
-    width: max-content; 
-    width: 100%;
-}
-
-.image-carousel img {
-    height: 150px; 
-    flex-shrink: 0; 
-    object-fit: cover; 
-    border-radius: 12px;
-}
-
-.image-carousel img:hover {
-    transform: scale(1.05); 
-  } 
-
-  .carousel-image {
+    gap: 24px;
+    width: max-content;
+  }
+  
+  .image-container {
+    position: relative;
+    height: 150px;
+    flex-shrink: 0;
+  }
+  
+  .image-container img {
     height: 150px;
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05);
   }
   
   .overlay {
@@ -95,20 +92,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
-    transition: opacity 0.3s;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.3s;
   }
   
-  .overlay-text {
-    color: white;
-    font-size: 1.2em;
-    text-align: center;
+  .image-container:hover .overlay {
+    opacity: 1;
   }
-
 
 .artwall{
     padding-top: 80px;

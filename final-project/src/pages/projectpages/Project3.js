@@ -6,6 +6,10 @@ import ProgressBar from '../../components/ProgressBar.js';
 import Learnings from '../../components/Learnings.js';
 import TitleBanner from '../../components/TitleBanner.js';
 
+import p3left from '../../images/p3-left.svg';
+import p3right from '../../images/p3-right.svg';
+import s3 from '../../images/solution3.svg';
+
 // flev
 const Project3 = () => {
     return (
@@ -24,8 +28,8 @@ const Project3 = () => {
             header = "Designing a filmmakers’ gig-hunting space as the MVP for a startup" 
             description = "FLeverage is an online community for filmmaking enthusiasts who are just starting out, to find gigs, connect, network, and engage in healthy competition to hone their skills."
             logoName = "Fleverage logo"
-            left = "/images/p3-left.svg"
-            right = "/images/p3-right.svg"/>
+            left = {p3left}
+            right = {p3right}/>
             
             <Summary 
             role = "UX Designer" 
@@ -36,7 +40,7 @@ const Project3 = () => {
             {/* problem */}
             <div className="content-block">
                 <div className = "header3 with-padding">Problem</div>
-                <div className="body">Filmmakers often get work through informal ways, making it hard to break into the industry and get a constant stream of gigs. Budding filmmakers find it hard to get their big break for other reasons like nepotism in the industry, or the lack of an accessible network.</div>
+                <div className="body grey">Filmmakers often get work through informal ways, making it hard to break into the industry and get a constant stream of gigs. Budding filmmakers find it hard to get their big break for other reasons like nepotism in the industry, or the lack of an accessible network.</div>
             </div>
             
             
@@ -46,11 +50,11 @@ const Project3 = () => {
             {/* solution */}
             <div className="content-block">
                 <div className = "header3 with-padding">Solution</div>
-                <div className="body">FLeverage is an online community for filmmaking enthusiasts to find gigs, connect, network, and engage in healthy competition to hone their skills.</div>
+                <div className="body grey">FLeverage is an online community for filmmaking enthusiasts to find gigs, connect, network, and engage in healthy competition to hone their skills.</div>
             </div>
 
             <div className = "project-image">
-                <img src='/images/solution3.svg'></img>
+                <img src={s3}></img>
             </div>
             
             <Learnings 

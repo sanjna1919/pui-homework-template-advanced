@@ -8,9 +8,10 @@
 .card {
     display: flex;
     max-width: 1000px;
+    width: 80%;
     border-radius: 2rem;
     height: auto;
-    padding: 6rem 3rem;
+    padding: 3rem 3rem;
     margin: 2rem auto;
     align-items: center;
     gap: 2rem;
@@ -18,8 +19,6 @@
     position: relative;
     cursor: url('../../public/images/customcursor.svg') 24 24, auto;
   }
-
-  
   
   .card-image {
     flex-shrink: 0;
@@ -39,7 +38,7 @@
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
     justify-content: space-between;
   }
   
@@ -63,4 +62,28 @@
   }
   
 
+  /*Making the card design responsive, changing layout to column  */
+  @media (max-width: 1050px) {
+    .card {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 3rem;
+    }
+    .card-content {
+      gap: 0.8rem;
+    }
+    .header3{
+      font-size: 28px;
+    }
+    .card-image {
+      width:100%;
+      height: auto;
+    }
+    .tag-label {
+      padding: 4px 12px;
+      border-radius: 16px;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+    }
   
+  }

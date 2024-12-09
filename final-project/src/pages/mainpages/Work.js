@@ -5,6 +5,13 @@ import Quote from '../../components/Quote.js';
 import ProjectCard from '../../components/ProjectCard.js';
 import projectData from '../../data/projectData.json';
 
+import p1 from '../../images/p1.svg';
+import p2 from '../../images/p2.svg';
+import p3 from '../../images/p3.svg';
+import p4 from '../../images/p4.svg';
+
+const pImageList = [p1, p2, p3, p4];
+
 
 // Animation Variant for main container
 const containerVariants = {
@@ -308,7 +315,7 @@ const Work = () => {
             key={project.id} 
             color={project.color}
             textcolor={project.textcolor}
-            image={project.image}
+            image={pImageList[index]}
             header={project.header}
             tags={project.tags}
             description={project.description}

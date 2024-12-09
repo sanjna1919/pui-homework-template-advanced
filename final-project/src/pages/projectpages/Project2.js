@@ -5,6 +5,10 @@ import Quote from '../../components/Quote.js';
 import Learnings from '../../components/Learnings.js';
 import TitleBanner from '../../components/TitleBanner.js';
 
+import p2left from '../../images/p2-left.svg';
+import p2right from '../../images/p2-left.svg';
+import s2 from '../../images/solution2.svg';
+
 // bms
 const Project2 = () => {
     return (
@@ -24,14 +28,14 @@ const Project2 = () => {
             header = "Designing an Apple Watch app to enhance and augment the BookMyShow experience" 
             description = "I identified the most critical features of the ticket-booking mobile app BookMyShow with about 70 million users, to design an Apple Watch app experience."
             logoName = "BookMyShow logo"
-            left = "/images/p2-left.svg"
-            right = "/images/p2-right.svg"/>
+            left = {p2left}
+            right = {p2right}/>
 
         
             {/* problem */}
             <div className="content-block">
                 <div className = "header3 with-padding">Problem</div>
-                <div className="body">In the current feature set, users who are interested in acquiring multiple financial assets or products face a cumbersome and time-consuming process. Each purchase requires a separate transaction, leading to multiple payment steps. This not only increases the time and effort required from the user but also adds complexity to the transaction process.</div>
+                <div className="body grey">In the current feature set, users who are interested in acquiring multiple financial assets or products face a cumbersome and time-consuming process. Each purchase requires a separate transaction, leading to multiple payment steps. This not only increases the time and effort required from the user but also adds complexity to the transaction process.</div>
             </div>
             
             
@@ -41,13 +45,12 @@ const Project2 = () => {
             {/* solution */}
             <div className="content-block">
                 <div className = "header3 with-padding">Solution</div>
-                <div className="body">Introduce an "Add to Cart" functionality within the Upstox app, allowing users to browse and add multiple financial assets or products to a cart, adjust quantities and review the entire cart and make a single payment for the entire cart.</div>
-            <div className="body">This feature is projected to increase user engagement, attracting new customers to Upstox. Assuming the likelihood of drop off increases with every order placement and a user is looking to invest 3-5 different stocks in a day, cart orders might be give us a lift of 20-30% in conversion and similar impact on AUM.</div>
+                <div className="body grey">Introduce an "Add to Cart" functionality within the Upstox app, allowing users to browse and add multiple financial assets or products to a cart, adjust quantities and review the entire cart and make a single payment for the entire cart.</div>
+            <div className="body grey">This feature is projected to increase user engagement, attracting new customers to Upstox. Assuming the likelihood of drop off increases with every order placement and a user is looking to invest 3-5 different stocks in a day, cart orders might be give us a lift of 20-30% in conversion and similar impact on AUM.</div>
             </div>
             
-            {/* image */}
             <div className = "project-image">
-                <img src='/images/solution2.svg'></img>
+                <img src={s2}></img>
             </div>
 
 

@@ -33,11 +33,11 @@
   }
 
   .learning-content {
-      flex-direction: column; /* Stack cards vertically */
-      gap: 12px; /* Reduce gap for smaller screens */
+      flex-direction: column; 
+      gap: 12px; 
   }
 
   .learning-card {
-      flex: unset; /* Disable flex-grow to stack cards naturally */
+      flex: unset; 
   }
 }

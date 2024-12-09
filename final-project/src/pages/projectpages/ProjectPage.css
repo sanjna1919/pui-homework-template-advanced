@@ -8,11 +8,11 @@
 
 .project-image{
     background-color: var(--background-color);
+    text-align: center;
 }
 
 .project-image img{
-    width: calc(100% - 280px);
-    padding: 0px 140px;
+    width: 100%;
 }
 
 
@@ -22,8 +22,8 @@
         padding: 40px 20px; /* Reduced padding for smaller screens */
     }
 
-    .project-image img {
-        width: 100%; /* Full width for smaller screens */
-        padding: 0 20px; /* Adjust padding */
+    .project-image {
+        max-width: none;
+        box-sizing: border-box; 
     }
 }
