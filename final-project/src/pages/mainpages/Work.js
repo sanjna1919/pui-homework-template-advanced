@@ -1,14 +1,12 @@
 import React from 'react';
-import { useRef } from 'react';
-import { easeIn, motion, useScroll, useTransform } from 'framer-motion';
+import {motion} from 'framer-motion';
 import '../../pages/mainpages/Work.css';
 import Quote from '../../components/Quote.js';
 import ProjectCard from '../../components/ProjectCard.js';
 import projectData from '../../data/projectData.json';
 
 
-
-// Animation Variants
+// Animation Variant for main container
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -19,26 +17,30 @@ const containerVariants = {
   },
 };
 
+// Animation Variant for parent container
 const parentVariants = {
     hidden: { opacity: 0 },
     visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.4, // Stagger appearance of child elements
+      staggerChildren: 0.4, 
     },
   },
 }
 
+// Animation Variant for item within parent container
 const itemVariants = {
   hidden: { opacity: 0 }, 
   visible: { opacity: 1 },
 };
 
+// Animation Variant for item within parent container, but a different style
 const itemVariantsMovement = {
     hidden: { opacity: 0, y:20 }, 
     visible: { opacity: 1, y:0 },
   };
 
+// Variant for animating flower svg
 const svgFlowerIcon = {
   hidden: {
     opacity:0,
@@ -56,6 +58,7 @@ const svgFlowerIcon = {
   }
 }
 
+// Variant for animating arrow svg
 const svgArrowIcon = {
   hidden: {
     opacity:0,
@@ -73,6 +76,7 @@ const svgArrowIcon = {
   }
 }
 
+// Variant for animating star and scribble svgs, same style
 const svgIcon = {
   hidden: {
     opacity:0,
@@ -89,26 +93,29 @@ const svgIcon = {
 
 
 
-
+// Main component rendered
 const Work = () => {
 
   return (
+    // HERO BANNER
     <motion.div
       className="hero-banner"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
+      {/* noscript for accessibility */}
       <noscript>
           <div className="noscript-message">
             JavaScript is required to view this page properly. Please enable JavaScript in your browser settings or use a compatible browser.
           </div>
         </noscript>
+
+        {/* HERO BANNER PART 1 */}
       <motion.div className="hero-banner1">
         {/* Line 1 */}
         <motion.div className="intro-line" variants={parentVariants}>
           <motion.span className="header1 with-margin centered" variants={itemVariants}>I'm Sanjna</motion.span>
-          
           
           {/* svg flower animation */}
           <motion.span className="icon-container" variants={itemVariants}>
@@ -224,8 +231,6 @@ const Work = () => {
               />
           </motion.svg>
         </motion.span>
-
-        
           <motion.span className="header1 with-margin centered" variants={itemVariants}>consumer FinTech</motion.span>
         </motion.div>
 
@@ -262,8 +267,13 @@ const Work = () => {
         </motion.div>
       </motion.div>
 
-      {/* HERO BANNER 2 */}
+
+
+
+      {/* HERO BANNER PART 2 */}
       <motion.div className="hero-banner2" variants={parentVariants}>
+
+        {/* cmu section */}
         <motion.div className="experience" variants={itemVariantsMovement}>
           <div className="left">
             <img src={`${process.env.PUBLIC_URL}/images/cmu.svg`} alt="CMU logo" />
@@ -274,6 +284,7 @@ const Work = () => {
           </div>
         </motion.div>
 
+        {/* upstox section */}
         <motion.div className="experience" variants={itemVariantsMovement}>
           <div className="left">
             <img src={`${process.env.PUBLIC_URL}/images/upstox.svg`} alt="Upstox logo" />
@@ -287,7 +298,8 @@ const Work = () => {
 
       <Quote content="I take a methodical approach to creativity and train it like a muscle every day." />
 
-      {/* Project Section */}
+
+      {/* Project Cards */}
       <motion.div className="project-section" >
         <div className="header2 centered">Selected Projects</div>
         <div className="project-cards">

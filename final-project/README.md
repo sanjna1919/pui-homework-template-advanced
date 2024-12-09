@@ -51,16 +51,25 @@ One challenge I faced was the learning curve with Framer Motion, particularly un
 * AI sometimes gives outputs that look okay but absolutely do not work in the intended way when executed. It cannot give complete outputs from scratch for complex prompts, having code to work with that I pulled from another site or a video was usually a good jumping off point for ChatGPT to edit and help me out. It can do basic code really well and that is where its strengths lie, it’s not the best for really complex interactions/descriptions. In those cases it might just be faster to write the code from scratch than to prompt the AI. A specific limitation I found was when I asked AI to help me make my site responsive by supplying it my code - it didn’t really work, I had to write the code manually. These were some surprising limitations I found. Although, the most useful case is probably for debugging and parsing code to see where errors come from.
 
 
+# Appendix (Accessibility + Responsivity)
 
-# Accessibility
+### Accessibility
 I used discretion in deciding which images need alt text and which don't - I used an ARIA attribute to ignore decorative elements while parsing the page. I also made sure to use semantic elements and clean code. I also commented my code and used approrpiate naming to make the code easy for others to understand. I had to make some tweaks to my color palette midway through the project when I did my first accessibility evaluation.
 
 Here are some screenshots to show accessibility from the WAVE Evaluation tool of the Work page, the About page, and one example Project page.
 
 #### Work Page
 ![alt text](image.png)
+![alt text](image-2.png)
 
 #### About Page
 ![alt text](image-1.png)
+![alt text](image-3.png)
 
 #### Project Page 
+
+
+### Responsivity
+Please test this website between the following maximum and minimum screen sizes,
+* Max width (Desktop) = 1440px
+* Min Width (for example, iPad Air) = 820px

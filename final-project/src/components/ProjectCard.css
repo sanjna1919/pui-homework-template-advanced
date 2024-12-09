@@ -3,20 +3,19 @@
 .project-card{
   text-decoration: none;
   color: inherit; 
-
+  width: auto;
 }
 .card {
     display: flex;
-    width: 1000px;
-    border-radius: 32px;
-    height: 500px;
-    padding: 32px;
-    margin: 30px;
+    max-width: 1000px;
+    border-radius: 2rem;
+    height: auto;
+    padding: 6rem 3rem;
+    margin: 2rem auto;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
     flex-shrink: 0;
     position: relative;
-    /* top: 120px; */
     cursor: url('../../public/images/customcursor.svg') 24 24, auto;
   }
 
@@ -26,8 +25,8 @@
     flex-shrink: 0;
     border-radius: 8px;
     overflow: hidden;
-    width: 550px;
-    
+    width: 50%;
+    height: auto;
   }
   
   .card-image img {
@@ -62,4 +61,6 @@
     letter-spacing: 0.1em;
     color: var(--grey);
   }
+  
+
   
